@@ -6,7 +6,7 @@
 
 # Interface: DeepInfraAIRequest
 
-Defined in: [types.ts:210](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L210)
+Defined in: [types.ts:210](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L210)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [types.ts:210](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480
 
 > **id**: `string`
 
-Defined in: [types.ts:211](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L211)
+Defined in: [types.ts:211](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L211)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [types.ts:211](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480
 
 > **selectedModel**: `string`
 
-Defined in: [types.ts:212](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L212)
+Defined in: [types.ts:212](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L212)
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: [types.ts:212](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480
 
 > **messages**: [`DeepInfraAIMessage`](DeepInfraAIMessage.md)[]
 
-Defined in: [types.ts:213](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L213)
+Defined in: [types.ts:213](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L213)

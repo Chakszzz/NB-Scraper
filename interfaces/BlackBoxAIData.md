@@ -6,7 +6,7 @@
 
 # Interface: BlackBoxAIData
 
-Defined in: [types.ts:256](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L256)
+Defined in: [types.ts:256](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L256)
 
 BlackBox AI Types
 
@@ -16,7 +16,7 @@ BlackBox AI Types
 
 > **response**: `string`
 
-Defined in: [types.ts:258](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L258)
+Defined in: [types.ts:258](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L258)
 
 The AI's response text
 
@@ -26,6 +26,6 @@ The AI's response text
 
 > **source**: [`BlackBoxSource`](BlackBoxSource.md)[]
 
-Defined in: [types.ts:260](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L260)
+Defined in: [types.ts:260](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L260)
 
 Array of sources used by the AI

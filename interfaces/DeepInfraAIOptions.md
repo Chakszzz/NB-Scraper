@@ -6,7 +6,7 @@
 
 # Interface: DeepInfraAIOptions
 
-Defined in: [types.ts:190](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L190)
+Defined in: [types.ts:190](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L190)
 
 DeepInfra AI Chat Types
 
@@ -24,7 +24,7 @@ DeepInfra AI Chat Types
 
 > **prompt**: `string`
 
-Defined in: [types.ts:191](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L191)
+Defined in: [types.ts:191](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L191)
 
 ***
 
@@ -32,4 +32,4 @@ Defined in: [types.ts:191](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480
 
 > `optional` **model**: `string`
 
-Defined in: [types.ts:192](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L192)
+Defined in: [types.ts:192](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L192)

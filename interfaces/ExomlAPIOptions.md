@@ -6,7 +6,7 @@
 
 # Interface: ExomlAPIOptions
 
-Defined in: [types.ts:162](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L162)
+Defined in: [types.ts:162](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L162)
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: [types.ts:162](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480
 
 > **messages**: [`ExomlAPIMessage`](ExomlAPIMessage.md)[]
 
-Defined in: [types.ts:163](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L163)
+Defined in: [types.ts:163](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L163)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [types.ts:163](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480
 
 > `optional` **systemPrompt**: `string`
 
-Defined in: [types.ts:164](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L164)
+Defined in: [types.ts:164](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L164)
 
 ***
 
@@ -38,4 +38,4 @@ Defined in: [types.ts:164](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480
 
 > `optional` **model**: `string`
 
-Defined in: [types.ts:165](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L165)
+Defined in: [types.ts:165](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L165)

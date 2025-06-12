@@ -8,7 +8,7 @@
 
 > **threads**(`url`, `options`): `Promise`\<[`NBScraperResponse`](../interfaces/NBScraperResponse.md)\<[`ThreadsMediaData`](../interfaces/ThreadsMediaData.md)\>\>
 
-Defined in: [scrapers/threads.ts:43](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/scrapers/threads.ts#L43)
+Defined in: [scrapers/threads.ts:43](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/scrapers/threads.ts#L43)
 
 Scrapes media URLs from Threads posts
 

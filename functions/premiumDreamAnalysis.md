@@ -8,7 +8,7 @@
 
 > **premiumDreamAnalysis**(`text`): `Promise`\<[`NBScraperResponse`](../interfaces/NBScraperResponse.md)\<[`DreamAnalysisData`](../interfaces/DreamAnalysisData.md)\>\>
 
-Defined in: [scrapers/dreamanalysis.ts:159](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/scrapers/dreamanalysis.ts#L159)
+Defined in: [scrapers/dreamanalysis.ts:159](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/scrapers/dreamanalysis.ts#L159)
 
 Premium analysis with detailed interpretation
 

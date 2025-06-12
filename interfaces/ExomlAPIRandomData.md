@@ -6,7 +6,7 @@
 
 # Interface: ExomlAPIRandomData
 
-Defined in: [types.ts:173](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L173)
+Defined in: [types.ts:173](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L173)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [types.ts:173](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480
 
 > **id**: `string`
 
-Defined in: [types.ts:174](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L174)
+Defined in: [types.ts:174](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L174)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [types.ts:174](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480
 
 > **chatId**: `string`
 
-Defined in: [types.ts:175](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L175)
+Defined in: [types.ts:175](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L175)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [types.ts:175](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480
 
 > **userId**: `string`
 
-Defined in: [types.ts:176](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L176)
+Defined in: [types.ts:176](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L176)
 
 ***
 
@@ -38,4 +38,4 @@ Defined in: [types.ts:176](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480
 
 > **antiBotId**: `string`
 
-Defined in: [types.ts:177](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L177)
+Defined in: [types.ts:177](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L177)

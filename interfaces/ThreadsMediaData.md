@@ -6,7 +6,7 @@
 
 # Interface: ThreadsMediaData
 
-Defined in: [types.ts:289](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L289)
+Defined in: [types.ts:289](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L289)
 
 Threads Scraper Types
 
@@ -16,7 +16,7 @@ Threads Scraper Types
 
 > **image\_urls**: `string`[]
 
-Defined in: [types.ts:291](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L291)
+Defined in: [types.ts:291](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L291)
 
 Array of image URLs
 
@@ -26,6 +26,6 @@ Array of image URLs
 
 > **video\_urls**: `string`[]
 
-Defined in: [types.ts:293](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L293)
+Defined in: [types.ts:293](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L293)
 
 Array of video URLs

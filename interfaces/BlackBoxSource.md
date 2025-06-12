@@ -6,7 +6,7 @@
 
 # Interface: BlackBoxSource
 
-Defined in: [types.ts:263](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L263)
+Defined in: [types.ts:263](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L263)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [types.ts:263](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480
 
 > **link**: `string`
 
-Defined in: [types.ts:265](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L265)
+Defined in: [types.ts:265](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L265)
 
 URL of the source
 
@@ -24,7 +24,7 @@ URL of the source
 
 > **title**: `string`
 
-Defined in: [types.ts:267](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L267)
+Defined in: [types.ts:267](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L267)
 
 Title of the source
 
@@ -34,7 +34,7 @@ Title of the source
 
 > **snippet**: `string`
 
-Defined in: [types.ts:269](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L269)
+Defined in: [types.ts:269](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L269)
 
 Text snippet from the source
 
@@ -44,6 +44,6 @@ Text snippet from the source
 
 > **position**: `number`
 
-Defined in: [types.ts:271](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L271)
+Defined in: [types.ts:271](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L271)
 
 Position/ranking of the source

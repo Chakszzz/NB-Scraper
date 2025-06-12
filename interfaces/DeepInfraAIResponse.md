@@ -6,7 +6,7 @@
 
 # Interface: DeepInfraAIResponse
 
-Defined in: [types.ts:216](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L216)
+Defined in: [types.ts:216](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L216)
 
 ## Indexable
 
@@ -18,7 +18,7 @@ Defined in: [types.ts:216](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480
 
 > `optional` **g**: `string` \| `string`[]
 
-Defined in: [types.ts:218](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L218)
+Defined in: [types.ts:218](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L218)
 
 Generated text
 
@@ -28,7 +28,7 @@ Generated text
 
 > `optional` **f**: `string` \| `string`[]
 
-Defined in: [types.ts:220](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L220)
+Defined in: [types.ts:220](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L220)
 
 Follow-up text
 
@@ -38,6 +38,6 @@ Follow-up text
 
 > `optional` **0**: `string` \| `string`[]
 
-Defined in: [types.ts:222](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L222)
+Defined in: [types.ts:222](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L222)
 
 Primary response

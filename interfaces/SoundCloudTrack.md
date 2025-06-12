@@ -6,7 +6,7 @@
 
 # Interface: SoundCloudTrack
 
-Defined in: [types.ts:102](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L102)
+Defined in: [types.ts:102](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L102)
 
 SoundCloud Scraper Types
 
@@ -16,7 +16,7 @@ SoundCloud Scraper Types
 
 > **id**: `number`
 
-Defined in: [types.ts:103](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L103)
+Defined in: [types.ts:103](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L103)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [types.ts:103](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480
 
 > **title**: `string`
 
-Defined in: [types.ts:104](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L104)
+Defined in: [types.ts:104](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L104)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [types.ts:104](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480
 
 > **url**: `string`
 
-Defined in: [types.ts:105](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L105)
+Defined in: [types.ts:105](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L105)
 
 ***
 
@@ -40,7 +40,7 @@ Defined in: [types.ts:105](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480
 
 > **duration**: `string`
 
-Defined in: [types.ts:106](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L106)
+Defined in: [types.ts:106](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L106)
 
 ***
 
@@ -48,7 +48,7 @@ Defined in: [types.ts:106](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480
 
 > **thumbnail**: `string`
 
-Defined in: [types.ts:107](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L107)
+Defined in: [types.ts:107](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L107)
 
 ***
 
@@ -56,7 +56,7 @@ Defined in: [types.ts:107](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480
 
 > **author**: `object`
 
-Defined in: [types.ts:108](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L108)
+Defined in: [types.ts:108](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L108)
 
 #### name
 
@@ -72,7 +72,7 @@ Defined in: [types.ts:108](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480
 
 > **like\_count**: `string`
 
-Defined in: [types.ts:112](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L112)
+Defined in: [types.ts:112](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L112)
 
 ***
 
@@ -80,7 +80,7 @@ Defined in: [types.ts:112](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480
 
 > **download\_count**: `string`
 
-Defined in: [types.ts:113](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L113)
+Defined in: [types.ts:113](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L113)
 
 ***
 
@@ -88,7 +88,7 @@ Defined in: [types.ts:113](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480
 
 > **play\_count**: `string`
 
-Defined in: [types.ts:114](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L114)
+Defined in: [types.ts:114](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L114)
 
 ***
 
@@ -96,4 +96,4 @@ Defined in: [types.ts:114](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480
 
 > **release\_date**: `null` \| `string`
 
-Defined in: [types.ts:115](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L115)
+Defined in: [types.ts:115](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L115)

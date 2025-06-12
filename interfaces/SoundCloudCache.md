@@ -6,7 +6,7 @@
 
 # Interface: SoundCloudCache
 
-Defined in: [types.ts:149](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L149)
+Defined in: [types.ts:149](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L149)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [types.ts:149](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480
 
 > **version**: `string`
 
-Defined in: [types.ts:150](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L150)
+Defined in: [types.ts:150](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L150)
 
 ***
 
@@ -22,4 +22,4 @@ Defined in: [types.ts:150](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480
 
 > **id**: `string`
 
-Defined in: [types.ts:151](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L151)
+Defined in: [types.ts:151](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L151)

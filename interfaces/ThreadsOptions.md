@@ -6,7 +6,7 @@
 
 # Interface: ThreadsOptions
 
-Defined in: [types.ts:296](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L296)
+Defined in: [types.ts:296](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L296)
 
 Configuration options for HTTP requests
 
@@ -24,7 +24,7 @@ Configuration options for HTTP requests
 
 > `optional` **timeout**: `number`
 
-Defined in: [types.ts:26](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L26)
+Defined in: [types.ts:26](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L26)
 
 #### Inherited from
 
@@ -36,7 +36,7 @@ Defined in: [types.ts:26](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d4802
 
 > `optional` **headers**: `Record`\<`string`, `string`\>
 
-Defined in: [types.ts:27](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L27)
+Defined in: [types.ts:27](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L27)
 
 #### Inherited from
 
@@ -48,7 +48,7 @@ Defined in: [types.ts:27](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d4802
 
 > `optional` **retries**: `number`
 
-Defined in: [types.ts:28](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L28)
+Defined in: [types.ts:28](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L28)
 
 #### Inherited from
 
@@ -60,7 +60,7 @@ Defined in: [types.ts:28](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d4802
 
 > `optional` **retryDelay**: `number`
 
-Defined in: [types.ts:29](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L29)
+Defined in: [types.ts:29](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L29)
 
 #### Inherited from
 
@@ -72,7 +72,7 @@ Defined in: [types.ts:29](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d4802
 
 > `optional` **imagesOnly**: `boolean`
 
-Defined in: [types.ts:298](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L298)
+Defined in: [types.ts:298](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L298)
 
 Whether to include only images
 
@@ -82,6 +82,6 @@ Whether to include only images
 
 > `optional` **videosOnly**: `boolean`
 
-Defined in: [types.ts:300](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L300)
+Defined in: [types.ts:300](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L300)
 
 Whether to include only videos

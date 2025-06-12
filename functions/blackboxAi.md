@@ -8,7 +8,7 @@
 
 > **blackboxAi**(`query`, `options`): `Promise`\<[`NBScraperResponse`](../interfaces/NBScraperResponse.md)\<[`BlackBoxAIData`](../interfaces/BlackBoxAIData.md)\>\>
 
-Defined in: [scrapers/blackbox.ts:53](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/scrapers/blackbox.ts#L53)
+Defined in: [scrapers/blackbox.ts:53](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/scrapers/blackbox.ts#L53)
 
 Scrapes BlackBox AI for responses to queries
 

@@ -8,7 +8,7 @@
 
 > **getPollinationsDirectUrl**(`options`): `string`
 
-Defined in: [scrapers/pollinations.ts:137](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/scrapers/pollinations.ts#L137)
+Defined in: [scrapers/pollinations.ts:137](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/scrapers/pollinations.ts#L137)
 
 Get direct image URL (without upload to Catbox)
 

@@ -6,7 +6,7 @@
 
 # Interface: PollinationsData
 
-Defined in: [types.ts:84](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L84)
+Defined in: [types.ts:84](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L84)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [types.ts:84](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d4802
 
 > **url**: `string`
 
-Defined in: [types.ts:86](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L86)
+Defined in: [types.ts:86](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L86)
 
 URL of the generated image on Catbox.moe
 
@@ -24,6 +24,6 @@ URL of the generated image on Catbox.moe
 
 > **directUrl**: `string`
 
-Defined in: [types.ts:88](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L88)
+Defined in: [types.ts:88](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L88)
 
 Direct Pollinations image URL

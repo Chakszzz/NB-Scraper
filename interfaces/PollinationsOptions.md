@@ -6,7 +6,7 @@
 
 # Interface: PollinationsOptions
 
-Defined in: [types.ts:78](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L78)
+Defined in: [types.ts:78](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L78)
 
 Pollinations AI Image Generation Types
 
@@ -20,7 +20,7 @@ Pollinations AI Image Generation Types
 
 > **prompt**: `string`
 
-Defined in: [types.ts:79](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L79)
+Defined in: [types.ts:79](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L79)
 
 ***
 
@@ -28,4 +28,4 @@ Defined in: [types.ts:79](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d4802
 
 > `optional` **nologo**: `boolean`
 
-Defined in: [types.ts:80](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L80)
+Defined in: [types.ts:80](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L80)

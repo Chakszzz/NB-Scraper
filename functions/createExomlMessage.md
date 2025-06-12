@@ -8,7 +8,7 @@
 
 > **createExomlMessage**(`role`, `content`): [`ExomlAPIMessage`](../interfaces/ExomlAPIMessage.md)
 
-Defined in: [scrapers/exomlapi.ts:112](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/scrapers/exomlapi.ts#L112)
+Defined in: [scrapers/exomlapi.ts:112](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/scrapers/exomlapi.ts#L112)
 
 Create a conversation message
 

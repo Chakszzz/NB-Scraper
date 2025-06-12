@@ -8,7 +8,7 @@
 
 > **createSuccessResponse**\<`T`\>(`data`): [`NBScraperResponse`](../interfaces/NBScraperResponse.md)\<`T`\>
 
-Defined in: [utils.ts:102](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/utils.ts#L102)
+Defined in: [utils.ts:102](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/utils.ts#L102)
 
 Creates a standardized success response
 

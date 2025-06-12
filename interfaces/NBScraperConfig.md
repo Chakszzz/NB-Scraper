@@ -6,7 +6,7 @@
 
 # Interface: NBScraperConfig
 
-Defined in: [types.ts:307](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L307)
+Defined in: [types.ts:307](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L307)
 
 Global configuration for the scraper library
 
@@ -16,7 +16,7 @@ Global configuration for the scraper library
 
 > **defaultTimeout**: `number`
 
-Defined in: [types.ts:309](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L309)
+Defined in: [types.ts:309](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L309)
 
 Default timeout for all requests
 
@@ -26,7 +26,7 @@ Default timeout for all requests
 
 > **defaultRetries**: `number`
 
-Defined in: [types.ts:311](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L311)
+Defined in: [types.ts:311](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L311)
 
 Default number of retries
 
@@ -36,7 +36,7 @@ Default number of retries
 
 > **defaultRetryDelay**: `number`
 
-Defined in: [types.ts:313](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L313)
+Defined in: [types.ts:313](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L313)
 
 Default retry delay
 
@@ -46,7 +46,7 @@ Default retry delay
 
 > **verboseErrors**: `boolean`
 
-Defined in: [types.ts:315](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L315)
+Defined in: [types.ts:315](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L315)
 
 Whether to log detailed error information
 
@@ -56,6 +56,6 @@ Whether to log detailed error information
 
 > **userAgent**: `string`
 
-Defined in: [types.ts:317](https://github.com/Chakszzz/NB-Scraper/blob/a54b0d480231641a2da59c589f08af0cd80e90f8/app/types.ts#L317)
+Defined in: [types.ts:317](https://github.com/Chakszzz/NB-Scraper/blob/06c561b9f0d22405d402fc768994dc101fb84509/app/types.ts#L317)
 
 Custom user agent string
