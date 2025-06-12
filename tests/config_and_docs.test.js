@@ -105,6 +105,7 @@ describe('Documentation Markdown Integrity', () => {
     jest.restoreAllMocks();
   });
 });
+
 test('markdownLinkCheck returns empty array when no links present', () => {
   const tmp = path.join(require('os').tmpdir(), 'nolinks.md');
   fs.writeFileSync(tmp, '# Title\nNo links here.');
