@@ -33,6 +33,7 @@ const BASE_URL = 'https://image.pollinations.ai/prompt/';
 const UPLOAD_URL = 'https://catbox.moe/user/api.php';
 
 /**
+ * @alpha
  * Generate image from prompt and upload to Catbox
  * 
  * @example
@@ -51,6 +52,7 @@ const UPLOAD_URL = 'https://catbox.moe/user/api.php';
  * 
  * @param options - Configuration for image generation
  * @returns Promise<NBScraperResponse<PollinationsData>>
+ * @author Jul
  */
 export async function generatePollinationsImage(
   options: PollinationsOptions
@@ -133,6 +135,7 @@ export async function generatePollinationsImage(
  * 
  * @param options - Configuration for image generation
  * @returns string - Direct image URL
+ * @author Jul
  */
 export function getPollinationsDirectUrl(options: PollinationsOptions): string {
   validateRequiredParams(options, ['prompt']);

@@ -39,6 +39,7 @@ import {
  * @throws Will not throw errors, returns error response instead
  * 
  * @public
+ * @author Rian
  */
 export async function threads(
   url: string,

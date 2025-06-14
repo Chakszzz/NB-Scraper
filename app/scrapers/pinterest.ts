@@ -13,6 +13,7 @@ import {
 } from '../utils';
 
 /**
+ * @alpha
  * Search Pinterest from the given query
  * 
  * @example
@@ -32,6 +33,7 @@ import {
  * @throws Returns error response
  * 
  * @public
+ * @author Wolep
  */
 export async function pinterest(
   query: string,

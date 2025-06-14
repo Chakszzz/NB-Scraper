@@ -141,6 +141,7 @@ async function getClientID(): Promise < string | null > {
  * 
  * @param options - Search configuration
  * @returns Promise<NBScraperResponse<SoundCloudData>>
+ * @author Rian
  */
 export async function searchSoundCloud(
   options: SoundCloudSearchOptions
@@ -214,6 +215,7 @@ export async function searchSoundCloud(
 }
 
 /**
+ * @alpha
  * Get cached client ID and version info
  * 
  * @example
@@ -225,6 +227,7 @@ export async function searchSoundCloud(
  * ```
  * 
  * @returns Current cache state
+ * @author Rian
  */
 export function getSoundCloudCacheInfo(): SoundCloudCache {
   return { ...cache };

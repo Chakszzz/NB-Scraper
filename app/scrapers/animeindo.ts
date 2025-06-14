@@ -42,7 +42,7 @@ export const animeIndo = {
    *   console.log(result.data);
    * }
    * ```
-   * 
+   * @author Jul
    */
   async search(query: string): Promise<NBScraperResponse<AnimeIndoSearchResult[]>> {
     try {
@@ -91,6 +91,7 @@ export const animeIndo = {
    *   console.log(result.data);
    * }
    * ```
+   * @author Jul
    */
   async detail(url: string): Promise<NBScraperResponse<AnimeIndoDetail>> {
     try {
@@ -150,6 +151,7 @@ export const animeIndo = {
    *   console.log(result.data.downloadUrl);
    * }
    * ```
+   * @author Jul
    */
   async download(episodeUrl: string): Promise<NBScraperResponse<AnimeIndoDownloadInfo>> {
     try {
