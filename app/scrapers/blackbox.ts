@@ -49,6 +49,7 @@ const DEFAULT_BLACKBOX_CONFIG = {
  * @throws Will not throw errors, returns error response instead
  * 
  * @public
+ * @author Pratama
  */
 export async function blackboxAi(
   query: string,

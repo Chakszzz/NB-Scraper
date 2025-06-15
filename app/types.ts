@@ -1,12 +1,13 @@
 /**
  * @fileoverview Type definitions for NB Scraper
  * @author ErRickow
- * @version 1.1.0
+ * @version 1.1.4
  */
 
 /**
  * Standard response structure for all scraper functions
  * @template T - The type of the data property
+ * @interface NBScraperResponse
  */
 export interface NBScraperResponse<T = unknown> {
   /** The creator/author of this scraper */
@@ -21,12 +22,75 @@ export interface NBScraperResponse<T = unknown> {
 
 /**
  * Configuration options for HTTP requests
+ * @interface RequestConfig
  */
 export interface RequestConfig {
 	timeout ? : number | undefined;
 	headers ? : Record < string, string > | undefined;
 	retries ? : number | undefined;
 	retryDelay ? : number | undefined;
+}
+
+export interface AnyDownloadMedia {
+  url: string;
+  quality: string;
+  extension: string;
+  size: number;
+  formattedSize: string;
+  videoAvailable: boolean;
+  audioAvailable: boolean;
+  chunked: boolean;
+  cached: boolean;
+}
+
+export interface AnyDownloadResult {
+  title: string;
+  duration: string | null;
+  thumbnail: string;
+  downloadUrls: AnyDownloadMedia[];
+}
+
+export interface AnyDownloadResponse {
+  input_url: string;
+  source: string;
+  result: AnyDownloadResult;
+  error: string | null;
+}
+
+export interface AnyDownloaderAPI {
+  (url: string): Promise<NBScraperResponse<AnyDownloadResponse>>;
+}
+
+export interface YouTubeDownloadResult {
+  title: string;
+  downloadUrl: string;
+  thumbnail?: string;
+  quality?: string;
+  type: 'mp3' | 'mp4';
+  duration?: string;
+}
+
+export interface YouTubeMP3Response {
+  link: string;
+  filename: string;
+}
+
+export interface YouTubeVideoResponse {
+  progress_url: string;
+  info?: {
+    image: string;
+    title: string;
+  };
+}
+
+export interface YouTubeProgressResponse {
+  progress: number;
+  download_url: string;
+}
+
+export interface YouTubeDownloaderAPI {
+  youtubeMp3(url: string): Promise<NBScraperResponse<YouTubeDownloadResult>>;
+  ytdl(url: string, quality?: string): Promise<NBScraperResponse<YouTubeDownloadResult>>;
 }
 
 /**
@@ -61,6 +125,7 @@ export enum ScraperErrorType {
 
 /**
  * Detailed error information
+ * @interface ScraperError
  */
 export interface ScraperError {
   /** The type of error that occurred */
@@ -321,6 +386,77 @@ export interface ThreadsOptions extends RequestConfig {
   [key: string]: unknown;
 }
 
+/**
+ * Liputan 6 Scraper Types
+ */
+export interface Liputan6NewsItem {
+  title: string;
+  link: string;
+  thumb?: string;
+  summary?: string;
+ // author: string;
+}
+
+export interface Liputan6SearchResult {
+  title: string;
+  link: string;
+  //author: string;
+}
+
+export interface Liputan6NewsDetail {
+  title: string;
+  description?: string;
+  image?: string;
+  published?: string;
+  author?: string;
+  content: string;
+}
+
+export interface Liputan6API {
+  getHomeNews(): Promise<NBScraperResponse<Liputan6NewsItem[]>>;
+  searchNews(query: string): Promise<NBScraperResponse<Liputan6SearchResult[]>>;
+  getNewsDetail(url: string): Promise<NBScraperResponse<Liputan6NewsDetail>>;
+}
+
+/**
+ * TikTok Scraper Types
+ */
+export interface TikTokPhoto {
+  index: number;
+  imageUrl: string;
+  downloadUrl: string;
+  type: 'photo';
+}
+
+export interface TikTokVideoLink {
+  type: 'video';
+  url: string;
+  quality: 'HD' | 'Normal' | string;
+  label: string;
+}
+
+export interface TikTokRenderData {
+  hasRenderButton: boolean;
+  token?: string;
+  isAd?: boolean;
+  type?: 'render';
+}
+
+export interface TikTokData {
+  originalUrl: string;
+  title: string;
+  author: string;
+  thumbnail: string;
+  contentType: 'slideshow' | 'video';
+  downloadLinks: TikTokVideoLink[];
+  photos: TikTokPhoto[];
+  renderData: TikTokRenderData;
+}
+
+export interface TikTokAPI {
+  (url: string): Promise<NBScraperResponse<TikTokData>>;
+}
+
 export interface AnimeIndoSearchResult {
   title: string;
   link: string;
@@ -382,6 +518,7 @@ export interface AnimeIndoAPI {
 
 /**
  * Global configuration for the scraper library
+ * @interface NBScraperConfig
  */
 export interface NBScraperConfig {
   /** Default timeout for all requests */

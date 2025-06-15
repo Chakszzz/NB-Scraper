@@ -96,6 +96,7 @@ function generateRandomIds(): ExomlAPIRandomData {
 }
 
 /**
+ * @alpha
  * Create a conversation message
  * 
  * @example
@@ -108,6 +109,7 @@ function generateRandomIds(): ExomlAPIRandomData {
  * @param role - Message role
  * @param content - Message content
  * @returns ExomlAPIMessage
+ * @author Wolep
  */
 export function createExomlMessage(
   role: "user" | "assistant" | "system",
@@ -137,6 +139,7 @@ export function createExomlMessage(
  * 
  * @param options - Configuration for the AI request
  * @returns Promise<NBScraperResponse<ExomlAPIData>>
+ * @author Wolep
  */
 export async function generateExomlResponse(
   options: ExomlAPIOptions

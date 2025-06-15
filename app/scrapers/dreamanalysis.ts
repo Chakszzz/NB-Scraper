@@ -63,6 +63,7 @@ function parseDreamResponse(raw: unknown): DreamAnalysisData | null {
  * 
  * @param options - Configuration for dream analysis
  * @returns Promise<NBScraperResponse<DreamAnalysisData>>
+ * @author NajmyW
  */
 export async function analyzeDream(
   options: DreamAnalysisOptions
@@ -133,6 +134,7 @@ export async function analyzeDream(
  * 
  * @param text - Dream description text
  * @returns Promise<NBScraperResponse<DreamAnalysisData>>
+ * @author NajmyW
  */
 export async function quickDreamAnalysis(
   text: string
@@ -155,6 +157,7 @@ export async function quickDreamAnalysis(
  * 
  * @param text - Dream description text
  * @returns Promise<NBScraperResponse<DreamAnalysisData>>
+ * @author NajmyW
  */
 export async function premiumDreamAnalysis(
   text: string

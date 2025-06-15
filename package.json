@@ -1,6 +1,6 @@
 {
   "name": "nb-scraper",
-  "version": "1.1.7",
+  "version": "1.1.9",
   "description": "Community scraper library by Newbie Scrape",
   "main": "dist/cjs/index.js",
   "module": "dist/index.mjs",

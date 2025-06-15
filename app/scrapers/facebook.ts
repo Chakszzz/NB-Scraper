@@ -26,10 +26,19 @@ interface AjaxResponse {
 }
 
 /**
- * Facebook Video Downloader Service using makeRequest
+ * @alpha
+ * Facebook Video Downloader Service using
  * 
  * @param url - Facebook video URL (must be in format: https://www.facebook.com/share/v/...)
  * @returns Promise<NBScraperResponse<FacebookVideoData>>
+ * @example
+ * ```ts
+ * const { facebookDownloader } = require('nb-scraper')
+ * 
+ * const res = await facebookDownloader('https://url.facebook.com/')
+ * console.log(res)
+ * ```
+ * @author Woiii
  */
 export async function facebookDownloader(url: string): Promise<NBScraperResponse<FacebookVideoData>> {
   try {
@@ -91,16 +100,31 @@ export async function facebookDownloader(url: string): Promise<NBScraperResponse
       data: ajaxPayload
     };
 
-    const ajaxRes = await makeRequest<AjaxResponse>(ajaxConfig);
-    if (ajaxRes.status !== 200 || ajaxRes.data?.status !== 'ok' || !ajaxRes.data?.data) {
+    const ajaxRes = await makeRequest < AjaxResponse > (ajaxConfig);
+    if (
+      ajaxRes.status !== 200 ||
+      (typeof ajaxRes.data !== 'string' && ajaxRes.data?.status !== 'ok')
+    ) {
       return createErrorResponse('Failed to fetch video data', {
         type: ScraperErrorType.API_ERROR,
         context: { service: 'FacebookDownloader' }
       });
     }
-
-    // Step 3: Parse HTML response
-    const $ = cheerio.load(ajaxRes.data.data);
+    
+    // Handle both string and nested object responses
+    const html = typeof ajaxRes.data === 'string' ?
+      ajaxRes.data :
+      ajaxRes.data?.data || '';
+    
+    if (!html) {
+      return createErrorResponse('No HTML content found in response', {
+        type: ScraperErrorType.API_ERROR,
+        context: { service: 'FacebookDownloader' }
+      });
+    }
+    
+    // Now safely load the HTML
+    const $ = cheerio.load(html);
     const thumbnail = $('.image-fb img').attr('src') || '';
     const duration = $('.content p').text().trim();
     const title = $('.content h3').text().trim();

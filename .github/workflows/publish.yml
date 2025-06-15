@@ -57,7 +57,7 @@ jobs:
           CURRENT_VERSION=$(jq -r .version package.json)
           PACKAGE_NAME=$(jq -r .name package.json)
           
-          npm deprecate "${PACKAGE_NAME}@<${CURRENT_VERSION}" "This version is deprecated. Please upgrade to ${CURRENT_VERSION}."
+          npm deprecate "${PACKAGE_NAME}@<${CURRENT_VERSION}" "[DEPRECATED] This version is deprecated. Please upgrade to ${CURRENT_VERSION}. Run: npm i nb-scraper@latest"
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           NPM_CONFIG_PROVENANCE: true

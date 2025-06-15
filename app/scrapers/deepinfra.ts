@@ -59,6 +59,7 @@ const;
  * 
  * @param options - Configuration for the AI request
  * @returns Promise<NBScraperResponse<DeepInfraAIData>>
+ * @author Woi
  */
 export async function generateDeepInfraResponse(
   options: DeepInfraAIOptions

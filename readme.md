@@ -1,5 +1,3 @@
-# NB Scraper
-
 [![icon](public/logo.png)](https://whatsapp.com/channel/0029Vb5EZCjIiRotHCI1213L)
 [![NPM](https://nodei.co/npm/nb-scraper.png)](https://npmjs.org/package/nb-scraper)
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://typescriptlang.org)
