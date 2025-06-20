@@ -1,0 +1,1 @@
+import("./dist/index.js").then(x => console.log(x));

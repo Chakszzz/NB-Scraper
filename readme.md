@@ -9,11 +9,12 @@
 A comprehensive TypeScript scraper library by **NB Team** that provides easy-to-use functions for interact with various scraper service from NB Scripts.
 
 ### 📢 Join Our WhatsApp Channel
+
 Untuk update terbaru, dukungan, dan sumber daya scraping terbaik, ikuti saluran resmi kami:
 
 **NB SCRAPER** di WhatsApp:  
 <a href="https://whatsapp.com/channel/0029Vb5EZCjIiRotHCI1213L">
-  <img src="https://static.whatsapp.net/rsrc.php/v3/yP/r/rYZqPCBaG70.png" 
+<img src="https://static.whatsapp.net/rsrc.php/v3/yP/r/rYZqPCBaG70.png" 
        width="30" 
        style="margin-right:10px" 
        loading="lazy" 
@@ -25,15 +26,21 @@ Untuk update terbaru, dukungan, dan sumber daya scraping terbaik, ikuti saluran 
 This project is designed to be easy to use. Visit the [WhatsApp Channel](https://whatsapp.com/channel/0029Vb5EZCjIiRotHCI1213L) for the code resources
 
 ## 📦 Installation
+
 **Using npm:**
+
 ```bash
 npm install nb-scraper
 ```
+
 **Using yarn:**
+
 ```bash
 yarn add nb-scraper
 ```
+
 **Using pnpm:**
+
 ```bash
 pnpm add nb-scraper
 ```
@@ -43,11 +50,11 @@ pnpm add nb-scraper
 ### ESM (Modern JavaScript/TypeScript)
 
 ```typescript
-import { generateDeepInfraResponse } from 'nb-scraper';
+import { generateDeepInfraResponse } from "nb-scraper";
 
 const result = await generateDeepInfraResponse({
   prompt: "Explain JavaScript in simple terms",
-  model: "deepseek-ai/DeepSeek-R1"
+  model: "deepseek-ai/DeepSeek-R1",
 });
 
 if (result.status) {
@@ -58,15 +65,19 @@ if (result.status) {
 ### CommonJS (Node.js)
 
 ```javascript
-const { generateDeepInfraResponse } = require('nb-scraper');
+const { generateDeepInfraResponse } = require("nb-scraper");
 
 // Same usage as above
 (async () => {
-  const result = await generateDeepInfraResponse('What the meaning of Pahlawan Indonesia?');
+  const result = await generateDeepInfraResponse(
+    "What the meaning of Pahlawan Indonesia?",
+  );
   console.log(result);
 })();
 ```
+
 ### See Documentation: [Nb-Scraper-Docs](https://nb-scraper.js.org)
+
 ### Success Response Example
 
 ```typescript
@@ -74,7 +85,7 @@ const { generateDeepInfraResponse } = require('nb-scraper');
   creator: "...",
   status: true,
   data: {
-    response: "...", 
+    response: "...",
   }
 }
 ```
@@ -94,7 +105,7 @@ const { generateDeepInfraResponse } = require('nb-scraper');
 NB Scraper is designed to never throw errors. Instead, all functions return a response object with a `status` field:
 
 ```typescript
-const result = await generateDeepInfraResponse('test query');
+const result = await generateDeepInfraResponse("test query");
 
 if (result.status) {
   // Success - use result.data
@@ -106,6 +117,7 @@ if (result.status) {
 ```
 
 Common error types:
+
 - `NETWORK_ERROR`: Connection, timeout, or server issues
 - `INVALID_INPUT`: Invalid parameters or URL format
 - `INVALID_RESPONSE`: Unexpected response format from API
@@ -115,6 +127,7 @@ Common error types:
 See the [ERROR TYPES](app/types.ts)
 
 ## Available Scrapers
+
 **See The [scrapers folder](app/scrapers)**
 
 ## 📄 License
@@ -122,6 +135,7 @@ See the [ERROR TYPES](app/types.ts)
 This project is licensed under the Unlicense – see the [LICENSE](LICENSE) file for details.
 
 ## 🔗 Links
+
 - [npm Package](https://www.npmjs.com/package/nb-scraper)
 - [NB-Scraper Channel](https://whatsapp.com/channel/0029Vb5EZCjIiRotHCI1213L)
 - [Documentation](https://nb-scraper.js.org)

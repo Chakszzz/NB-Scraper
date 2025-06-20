@@ -24,14 +24,14 @@ Example scraper structure:
 ```typescript
 export async function yourScraper(
   input: string,
-  options: YourScraperOptions = {}
+  options: YourScraperOptions = {},
 ): Promise<NBScraperResponse<YourScraperData>> {
   try {
-    validateRequiredParams({ input }, ['input']);
-    
+    validateRequiredParams({ input }, ["input"]);
+
     // Your scraping logic here
     const result = await makeRequest(config, options);
-    
+
     return createSuccessResponse(processedData);
   } catch (error) {
     return createErrorResponse(error as Error, { input });
@@ -40,6 +40,7 @@ export async function yourScraper(
 ```
 
 ## Project Structure
+
 ```
 nb-scraper/
 ├── app/
@@ -55,10 +56,12 @@ nb-scraper/
 ## Development Setup
 
 ### Prerequisites
+
 - Node.js (v16 or higher)
 - npm/yarn/pnpm
 
 ### Setup
+
 ```bash
 git clone https://github.com/chakszzz/nb-scraper.git
 cd nb-scraper
@@ -66,6 +69,7 @@ npm install
 ```
 
 ### Build Commands
+
 ```bash
 npm run build          # Build all formats
 npm run build:cjs      # Build CommonJS
@@ -74,6 +78,7 @@ npm run build:types    # Build type definitions
 ```
 
 ### Testing
+
 ```bash
 npm test               # Run tests
 npm run test:watch     # Run tests in watch mode
@@ -81,28 +86,33 @@ npm run test:coverage  # Run tests with coverage
 ```
 
 ### Linting
+
 ```bash
 npm run lint           # Check for linting errors
 npm run lint:fix       # Fix linting errors
 ```
 
 ### Documentation
+
 ```bash
 npm run docs           # Generate documentation
 npm run docs:serve     # Serve documentation locally
 ```
 
 ## Code Style
+
 - Follow TypeScript best practices
 - Use descriptive variable names
 - Include comprehensive JSDoc comments
 - Keep functions focused and modular
 
 ## Pull Request Guidelines
+
 - Reference related issues
 - Include tests for new features
 - Update documentation as needed
 - Keep commits atomic and well-described
 
 ## Reporting Issues
+
 Please use the GitHub issue tracker to report bugs or suggest features.

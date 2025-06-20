@@ -8,6 +8,7 @@
 ## 🛠️ GETTING STARTED
 
 ### Installation
+
 Choose your preferred package manager:
 
 ```bash
@@ -26,12 +27,13 @@ pnpm add nb-scraper
 ```
 
 ### Basic Usage
+
 ```typescript
-import { generatePollinationsImage } from 'nb-scraper';
+import { generatePollinationsImage } from "nb-scraper";
 
 const result = await generatePollinationsImage({
   prompt: "a beautiful sunset over mountains",
-  nologo: true
+  nologo: true,
 });
 
 if (result.status) {
@@ -44,18 +46,21 @@ if (result.status) {
 ---
 
 ## Further Integrating
+
 Explore all available functions and examples:  
 [Full API Documentation](https://chakszzz.github.io/NB-Scraper/modules.html)
 
 ---
 
 ## 🤝 CONTRIBUTING
+
 We welcome contributions! Please read our:  
 [Contribution Guidelines](CONSTRIBUTING.md)
 
 ---
 
 ## 💬 SUPPORT
+
 For updates and support:  
 🔗 [GitHub Repository](https://github.com/Chakszzz/NB-Scraper)  
 📱 [WhatsApp Channel](https://whatsapp.com/channel/0029V5EZCjIiRotHCI1213L)

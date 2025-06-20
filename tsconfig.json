@@ -1,20 +1,22 @@
 {
   "compilerOptions": {
-    "target": "ES2021",
-    "module": "commonjs",
-    "lib": ["ES2021", "dom"],
-    "declaration": true,
-    "declarationMap": true,
-    "sourceMap": true,
-    "outDir": "./dist",
-    "rootDir": "./app",
-    "strict": true,
-    "moduleResolution": "node",
-    "esModuleInterop": true,
+    "target": "es2018",
+    "module": "CommonJS",
+    "moduleResolution": "NodeNext",
+    "experimentalDecorators": true,
+    "allowJs": true,
+    "checkJs": false,
+    "outDir": "dist",
+    "strict": false,
+    "strictNullChecks": true,
     "skipLibCheck": true,
+    "noImplicitThis": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
     "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true
+    "declaration": true,
+    "lib": ["es2020", "esnext.array", "DOM"]
   },
-  "include": ["app/**/*"],
-  "exclude": ["node_modules", "dist", "**/*.test.ts"]
+  "include": ["./app/**/*.js"],
+  "exclude": ["node_modules"]
 }
