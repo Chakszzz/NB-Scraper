@@ -1,0 +1,63 @@
+name: Release
+
+on:
+  push:
+    paths:
+      - 'package.json'
+  workflow_dispatch:
+
+jobs:
+  publish-npm:
+    name: Publish on NPM
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: "https://registry.npmjs.org"
+
+      - name: Install dependencies
+        run: |
+          if [ ! -f package-lock.json ]; then
+            echo "::warning::Lockfile tidak ada. Membuat yang baru..."
+            npm install --package-lock-only
+          
+            git config --global user.email "hub@erdev.biz.id"
+            git config --global user.name "ErBots"
+          
+            git add package-lock.json
+            git commit -m "chore: add lockfile [skip ci]"
+            git push
+          fi
+          
+          npm install
+
+      - name: Validate package.json
+        run: |
+          jq empty package.json \
+            && echo "✅ package.json valid" \
+            || (echo "❌ Invalid package.json" && exit 1)
+
+      - name: Get package version
+        id: package_version
+        run: echo "VERSION=$(jq -r .version package.json)" >> $GITHUB_ENV
+
+      - name: Publish to NPM
+        run: |
+          npm publish --access public --ignore-scripts
+          
+          CURRENT_VERSION=$(jq -r .version package.json)
+          PACKAGE_NAME=$(jq -r .name package.json)
+          
+          npm deprecate "${PACKAGE_NAME}@<${CURRENT_VERSION}" "[NB SCRAPER DEPRECATED] This version is deprecated. Please upgrade to ${CURRENT_VERSION}. Run: npm i nb-scraper@latest"
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_CONFIG_PROVENANCE: true
