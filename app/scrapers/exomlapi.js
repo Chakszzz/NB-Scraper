@@ -39,6 +39,7 @@ export const EXOML_MODELS = [
  */
 function generateRandomIds() {
   const gen = (length, charSet = {}) => {
+    const crypto = require("crypto");
     const l = "abcdefghijklmnopqrstuvwxyz";
     const u = l.toUpperCase();
     const s = "-_";
@@ -62,7 +63,7 @@ function generateRandomIds() {
     // Generate random string
     return Array.from(
       { length },
-      () => cs[Math.floor(Math.random() * cs.length)],
+      () => cs[crypto.randomBytes(1)[0] % cs.length],
     ).join("");
   };
   // Generate IDs with specific character sets
