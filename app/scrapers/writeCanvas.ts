@@ -4,7 +4,7 @@
  */
 
 import axios, { AxiosResponse } from 'axios';
-import { NBScraperResponse, LemonWriteResult, LemonWriteOptions } from '../types';
+import type { NBScraperResponse, LemonWriteResult, LemonWriteOptions } from '../types';
 import { createErrorResponse, createSuccessResponse, validateRequiredParams } from '../utils';
 
 const LEMON_WRITE_API = 'https://lemon-write.vercel.app/api/generate-book';
