@@ -110,7 +110,10 @@ export type {
 	YouTubeVideoResponse,
 	YouTubePostAPI,
 	YouTubePostData,
-	YouTubePostImage
+	YouTubePostImage,
+	LemonWriteOptions,
+	LemonWriteResult,
+	WriteCanvas
 }
 from './types';
 
@@ -131,7 +134,7 @@ from './utils';
  * Library version
  * @public
  */
-export const VERSION = "1.2.2";
+export const VERSION = "1.2.4";
 
 /**
  * Library information

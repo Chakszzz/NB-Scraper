@@ -4,23 +4,13 @@
  */
 
 import axios, { AxiosResponse } from 'axios';
-import { NBScraperResponse } from '../types';
+import type { NBScraperResponse, LemonWriteResult, LemonWriteOptions } from '../types';
 import { createErrorResponse, createSuccessResponse, validateRequiredParams } from '../utils';
-
-export interface LemonWriteOptions {
-  font?: string;
-  color?: string;
-  size?: string;
-}
-
-export interface LemonWriteResult {
-  imageBuffer: Buffer;
-  contentType: string;
-}
 
 const LEMON_WRITE_API = 'https://lemon-write.vercel.app/api/generate-book';
 
 /**
+ * @alpha
  * Generates an image using Lemon Write API
  *
  * @param text - Text to convert into image
@@ -28,10 +18,13 @@ const LEMON_WRITE_API = 'https://lemon-write.vercel.app/api/generate-book';
  * @returns Image buffer wrapped in response format
  *
  * @example
+ * const { lemonWrite } = require('nb-scraper')
+ *
  * const result = await lemonWrite("Hello 🍋", { font: "Pacifico", color: "#FF00FF", size: "32" });
  * if (result.success) {
  *   fs.writeFileSync('output.png', result.data.imageBuffer);
  * }
+ * @author LemonSync
  */
 export async function lemonWrite(
   text: string,
