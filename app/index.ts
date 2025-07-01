@@ -134,7 +134,7 @@ from './utils';
  * Library version
  * @public
  */
-export const VERSION = "1.2.2";
+export const VERSION = "1.2.4";
 
 /**
  * Library information
