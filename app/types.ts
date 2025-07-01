@@ -990,3 +990,24 @@ export interface NBScraperConfig {
   /** Custom user agent string */
   userAgent: string;
 }
+
+export interface LemonWriteOptions {
+  font?: string;
+  color?: string;
+  size?: string;
+}
+
+export interface LemonWriteResult {
+  imageBuffer: Buffer;
+  contentType: string;
+}
+
+/**
+ * Low-level response from the canvas writer.
+ */
+export interface WriteCanvas {
+  /** HTTP-like status code (200 = OK) */
+  status: number;
+  /** Generated image data */
+  message: Buffer;
+}
