@@ -24,6 +24,7 @@ const LEMON_WRITE_API = 'https://lemon-write.vercel.app/api/generate-book';
  * if (result.success) {
  *   fs.writeFileSync('output.png', result.data.imageBuffer);
  * }
+ * @author LemonSync
  */
 export async function lemonWrite(
   text: string,
