@@ -24,6 +24,7 @@ export { WeatherMaster } from './wheaterMaster';
 export { getYoutubePost } from './youtube-post';
 export {generateLyrics} from './lyrics-generator';
 export {searchApk} from './apkpure';
+export {lemonWrite} from './writeCanvas';
 
 // Re-export types for convenience
 export type {
@@ -115,5 +116,8 @@ export type {
   YouTubeDownloadResult,
   YouTubeMP3Response,
   YouTubeProgressResponse,
-  YouTubeVideoResponse
+  YouTubeVideoResponse,
+	WriteCanvas,
+	LemonWriteResult,
+	LemonWriteOptions
 } from '../types';
