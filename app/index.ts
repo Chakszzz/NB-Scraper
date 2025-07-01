@@ -110,7 +110,10 @@ export type {
 	YouTubeVideoResponse,
 	YouTubePostAPI,
 	YouTubePostData,
-	YouTubePostImage
+	YouTubePostImage,
+	LemonWriteOptions,
+	LemonWriteResult,
+	WriteCanvas
 }
 from './types';
 
