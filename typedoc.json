@@ -7,7 +7,6 @@
   "excludePrivate": true,
   "excludeProtected": true,
   "excludeExternals": true,
-  "tsconfig": "tsconfig.json",
   "theme": "my-theme",
   "readme": "docs.md",
   "favicon": "public/favicon.ico",
@@ -44,6 +43,9 @@
     "@beta", 
     "@experimental"
   ],
+  "markdownItOptions": {
+    "html": true
+  },
   "plugin": [
     "typedoc-plugin-missing-exports",
     "typedoc-plugin-mdn-links",

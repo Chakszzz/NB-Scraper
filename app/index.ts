@@ -138,8 +138,6 @@ export type {
   Alerts
 } from './types';
 
-export * from './re-export';
-
 // Export utilities (for advanced users)
 export {
 	createErrorResponse,
@@ -154,13 +152,11 @@ export {
 
 /**
  * Library version
- * @public
  */
 export const VERSION = "1.2.6";
 
 /**
  * Library information
- * @public
  */
 export const INFO = {
 	name: 'nb-scraper',
