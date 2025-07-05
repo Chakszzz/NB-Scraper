@@ -1,7 +1,7 @@
 /**
  * @fileoverview Type definitions for NB Scraper
  * @author ErRickow
- * @version 1.1.4
+ * @version 1.1.5
  */
 
 /**
@@ -139,6 +139,132 @@ export interface ScraperError {
 }
 
 /* ==================== Scraper-Specific Types ==================== */
+
+/**
+ * Unaimytext Scraper Types
+ */
+export type UnaimytextLevel = 'standard' | 'enhanced' | 'aggressive';
+
+export interface UnaimytextSettings {
+  removeUnicode?: boolean;
+  dashesToCommas?: boolean;
+  removeDashes?: boolean;
+  transformQuotes?: boolean;
+  removeWhitespace?: boolean;
+  removeEmDash?: boolean;
+  keyboardOnly?: boolean;
+}
+
+export interface UnaimytextOptions {
+  text: string;
+  level?: UnaimytextLevel;
+  settings?: UnaimytextSettings;
+}
+
+export interface UnaimytextData {
+  humanizedText: string;
+  level: UnaimytextLevel;
+  originalLength: number;
+  transformedLength: number;
+  reductionPercentage: string;
+}
+
+export interface UnaimytextAPI {
+    (options: UnaimytextOptions): Promise<NBScraperResponse<UnaimytextData>>;
+}
+
+/**
+ * BacaKomik Scraper Types
+ */
+export interface BacaKomikSearchResult {
+  title: string;
+  url: string;
+  image: string;
+  type: string;
+  score: number;
+  genres: string[];
+  chapter: string;
+}
+
+export interface BacaKomikLatestResult {
+  title: string;
+  url: string;
+  image: string;
+  type: string;
+  views: number;
+  score: number;
+  status: string;
+  colorized: boolean;
+  latestChapter: {
+    chapter: string;
+    url: string;
+    time: string;
+  };
+}
+
+export interface BacaKomikRecommendationResult {
+    title: string;
+    url: string;
+    image: string;
+    type: string;
+    score: number;
+    status: string;
+    recommendedChapter: {
+        chapter: string;
+        url: string;
+        time: string;
+    };
+}
+
+export interface BacaKomikFilterOptions {
+    type?: string;
+    status?: string;
+    genre?: string[];
+    content?: string[];
+    demographic?: string[];
+    theme?: string[];
+}
+
+export interface BacaKomikDetailData {
+    id: string;
+    title: string;
+    synopsis: string;
+    score: number;
+    status: string;
+    cover: string;
+    thumbnail: string;
+    author: string[];
+    genre: string[];
+    theme: string[];
+    content: string[];
+    demographic: string[];
+    chapters: {
+        chapter: string;
+        url: string;
+        download: string;
+    }[];
+}
+
+export interface BacaKomikChapterData {
+    id: string;
+    title: string;
+    chapter: string;
+    next: string; // ID for the next chapter
+    thumbnail: string;
+    readerLink: string;
+    adsLink: string;
+    images: string[];
+}
+
+// API Interfaces
+export interface BacaKomikAPI {
+  searchComics(keyword: string, page?: number): Promise<NBScraperResponse<{ query: string; paged: number; total: number; data: BacaKomikSearchResult[] }>>;
+  getLatestComics(): Promise<NBScraperResponse<{ total: number; data: BacaKomikLatestResult[] }>>;
+  getRecommendedComics(): Promise<NBScraperResponse<{ total: number; data: BacaKomikRecommendationResult[] }>>;
+  filterComics(options: BacaKomikFilterOptions): Promise<NBScraperResponse<{ filters: BacaKomikFilterOptions; total: number; data: BacaKomikSearchResult[] }>>;
+  getComicDetail(idOrUrl: string): Promise<NBScraperResponse<BacaKomikDetailData>>;
+  getChapter(idOrUrl: string): Promise<NBScraperResponse<BacaKomikChapterData>>;
+}
 
 /**
  * Pollinations AI Image Generation Types

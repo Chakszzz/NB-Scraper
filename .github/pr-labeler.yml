@@ -6,11 +6,11 @@ caseSensitive: true
 customLabels:
   # Conventional commit patterns
   - text: 'feat'       # Akan cocok dengan "feat" di judul/body PR
-    label: 'feature'
+    label: 'New Feature'
   - text: 'fix'        # Akan cocok dengan "fix"
-    label: 'bug'
+    label: 'Improvement'
   - text: 'chore'      # Akan cocok dengan "chore"
-    label: 'improvement'
+    label: 'Enhancment'
   - text: 'docs'       # Akan cocok dengan "docs"
     label: 'documentation'
   - text: 'test'       # Akan cocok dengan "test"

@@ -24,6 +24,21 @@ Untuk update terbaru, dukungan, dan sumber daya scraping terbaik, ikuti saluran 
 
 This project is designed to be easy to use. Visit the [WhatsApp Channel](https://whatsapp.com/channel/0029Vb5EZCjIiRotHCI1213L) for the code resources
 
+<details>
+<summary><b>🔽 Want to Include Your Scraper?</b></summary>
+
+1. **Fork the repository** [here](https://github.com/Chakszzz/NB-Scraper/fork)
+2. **Create a new branch**: `git checkout -b feature/new-scraper`
+3. **Add your scraper** on `app/scrapers/`
+4. **Add comprehensive tests** in `integration-tests/` (optional)
+5. **Submit a pull request**
+
+Pro Tip: Join our [WhatsApp Channel](https://whatsapp.com/channel/0029Vb5EZCjIiRotHCI1213L) for contribution support!
+</details>
+
+> [!IMPORTANT]
+> If you encountering an error using our library or get confuse when writing youre own scrapers, Feel Free To [Open An Issue](https://github.com/chakszzz/nb-scraper/issues)!
+
 ## 📦 Installation
 **Using npm:**
 ```bash
@@ -116,6 +131,14 @@ See the [ERROR TYPES](app/types.ts)
 
 ## Available Scrapers
 **See The [scrapers folder](app/scrapers)**
+
+## Contributors
+
+<!-- readme: collaborators,contributors -start -->
+<!-- readme: collaborators,contributors -end -->
+
+> [!NOTE]
+> If you're name include on the [Repository scrapers folder](app/scrapers), You can submit you're github username at Github issue's  or via pull requests to include yours constributor at this section
 
 ## 📄 License
 

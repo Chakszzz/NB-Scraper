@@ -1,0 +1,50 @@
+name: 'Verify Package Exports'
+
+on:
+  pull_request:
+    branches: [main, develop]
+  push:
+    branches: [main]
+    tags: ['v*']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    name: 'Test CJS and ESM Exports'
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout Repository'
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          
+      - name: Install dependencies
+        run: |
+          if [ ! -f package-lock.json ]; then
+            echo "::warning::Lockfile tidak ada. Membuat yang baru..."
+            npm install --package-lock-only
+          
+            git config --global user.email "hub@erdev.biz.id"
+            git config --global user.name "ErBots"
+          
+            git add package-lock.json
+            git commit -m "chore: add lockfile [skip ci]"
+            git push
+          fi
+          
+          npm install
+
+      - name: 'Build Package'
+        run: npm run build
+        
+      - name: 'Run CommonJS (require) Test'
+        run: node integration-tests/cjs.test.js
+        
+      - name: 'Run ES Modules (import) Test'
+        run: node integration-tests/esm.test.mjs
