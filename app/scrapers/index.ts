@@ -5,26 +5,26 @@
  * @since 1.1.5
  */
 
-export { blackboxAi } from './blackbox.js';
-export { threads } from './threads.js';
-export { pinterest } from './pinterest.js';
-export { createExomlMessage, generateExomlResponse  } from './exomlapi.js';
-export { analyzeDream, quickDreamAnalysis, premiumDreamAnalysis } from './dreamanalysis.js';
-export { generatePollinationsImage, getPollinationsDirectUrl } from './pollinations.js';
-export { searchSoundCloud, getSoundCloudCacheInfo } from './soundcloud.js';
-export { generateDeepInfraResponse } from './deepinfra.js';
-export * from './animeindo.js';
-export { facebookDownloader } from './facebook.js';
-export { anyDownloader } from './anydownloader.js';
-export * from './youtube.js';
-export * from './bacomik.js';
-export { getYoutubePost } from './youtube-post.js';
-export { laraTranslate } from './laratranslate.js';
-export { generateLyrics } from './lyrics-generator.js';
-export { searchApk } from './apkpure.js';
-export { unaimytextHumanize } from './unaimytext.js';
-export {lemonWrite} from './writeCanvas.js';
-export {searchComics} from './bacakomik.js'
+export { blackboxAi } from './blackbox';
+export { threads } from './threads';
+export { pinterest } from './pinterest';
+export { createExomlMessage, generateExomlResponse  } from './exomlapi';
+export { analyzeDream, quickDreamAnalysis, premiumDreamAnalysis } from './dreamanalysis';
+export { generatePollinationsImage, getPollinationsDirectUrl } from './pollinations';
+export { searchSoundCloud, getSoundCloudCacheInfo } from './soundcloud';
+export { generateDeepInfraResponse } from './deepinfra';
+export * from './animeindo';
+export { facebookDownloader } from './facebook';
+export { anyDownloader } from './anydownloader';
+export * from './youtube';
+export * from './bacomik';
+export { getYoutubePost } from './youtube-post';
+export { laraTranslate } from './laratranslate';
+export { generateLyrics } from './lyrics-generator';
+export { searchApk } from './apkpure';
+export { unaimytextHumanize } from './unaimytext';
+export {lemonWrite} from './writeCanvas';
+export {searchComics} from './bacakomik'
 
 // Re-export types for convenience
 export type {
@@ -131,4 +131,4 @@ export type {
 	WriteCanvas,
 	LemonWriteResult,
 	LemonWriteOptions
-} from '../types.js';
+} from '../types';

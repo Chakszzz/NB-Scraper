@@ -13,7 +13,7 @@
  *
  */
 // Export all scrapers
-export * from './scrapers/index.js';
+export * from './scrapers/index';
 
 // Export types
 export type {
@@ -125,7 +125,7 @@ export type {
   WriteCanvas,
   LemonWriteResult,
   LemonWriteOptions
-} from './types.js';
+} from './types';
 
 // Export utilities (for advanced users)
 export {
@@ -137,7 +137,7 @@ export {
 	formatBytes,
 	DEFAULT_CONFIG,
 	CREATOR
-} from './utils.js';
+} from './utils';
 
 /**
  * Library version

@@ -24,9 +24,6 @@ jobs:
         with:
           node-version: 20
           
-      - name: 'install assert'
-        run: npm i assert
-
       - name: 'Install Dependencies'
         run: npm ci
 
