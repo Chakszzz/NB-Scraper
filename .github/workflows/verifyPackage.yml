@@ -2,13 +2,14 @@ name: 'Verify Package Exports'
 
 on:
   pull_request:
-    branches:
-      - main
-      - develop
+    branches: [main, develop]
+  push:
+    branches: [main]
+    tags: ['v*']
   workflow_dispatch:
 
 permissions:
-  content: read
+  contents: read
 
 jobs:
   verify:
