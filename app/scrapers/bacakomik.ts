@@ -32,8 +32,7 @@ function parseId(input: string, expectedPage: 'manga' | 'chapter'): string | nul
         }
         return null;
     } catch {
-        // Assume input is a direct ID string if it's not a valid URL
-        return input;
+        return /^[a-zA-Z0-9]+$/.test(input) ? input : null;
     }
 }
 
@@ -56,7 +55,7 @@ export async function searchComics(keyword: string, page: number = 1): Promise<N
     const url = `${API_BASE_URL}/?page=search&search=${encodeURIComponent(keyword)}&paged=${page}`;
 
     try {
-        const response = await makeRequest({ url, headers: API_HEADERS, timeout: 8000 });
+        const response = await makeRequest<any[]>({ url, headers: API_HEADERS, timeout: 8000 });
         if (!Array.isArray(response.data) || response.data.length === 0) {
             return createErrorResponse('No results found for this query and page.', { type: ScraperErrorType.NOT_FOUND });
         }
@@ -82,7 +81,7 @@ export async function searchComics(keyword: string, page: number = 1): Promise<N
 export async function getLatestComics(): Promise<NBScraperResponse<{ total: number; data: BacaKomikLatestResult[] }>> {
     const url = `${API_BASE_URL}/?page=latest`;
     try {
-        const response = await makeRequest({ url, headers: API_HEADERS, timeout: 8000 });
+        const response = await makeRequest<any[]>({ url, headers: API_HEADERS, timeout: 8000 });
         if (!Array.isArray(response.data)) {
             return createErrorResponse('Failed to retrieve latest comics.', { type: ScraperErrorType.API_ERROR });
         }
@@ -114,7 +113,7 @@ export async function getLatestComics(): Promise<NBScraperResponse<{ total: numb
 export async function getRecommendedComics(): Promise<NBScraperResponse<{ total: number; data: BacaKomikRecommendationResult[] }>> {
     const url = `${API_BASE_URL}/?page=rekomendasi`;
     try {
-        const response = await makeRequest({ url, headers: API_HEADERS, timeout: 8000 });
+        const response = await makeRequest<any[]>({ url, headers: API_HEADERS, timeout: 8000 });
         if (!Array.isArray(response.data)) {
             return createErrorResponse('Failed to retrieve recommended comics.', { type: ScraperErrorType.API_ERROR });
         }
@@ -137,6 +136,7 @@ export async function getRecommendedComics(): Promise<NBScraperResponse<{ total:
     }
 }
 
+
 /**
  * Retrieves comic details by its ID or URL.
  * @param idOrUrl - The comic ID or its full URL.
@@ -149,7 +149,7 @@ export async function getComicDetail(idOrUrl: string): Promise<NBScraperResponse
     }
     const url = `${API_BASE_URL}/?page=manga&id=${id}`;
     try {
-        const response = await makeRequest({ url, headers: API_HEADERS, timeout: 10000 });
+        const response = await makeRequest<any[]>({ url, headers: API_HEADERS, timeout: 10000 });
         const data = response.data?.[0];
         if (!data) {
             return createErrorResponse('Comic details not found.', { type: ScraperErrorType.NOT_FOUND });
@@ -191,7 +191,7 @@ export async function getChapter(idOrUrl: string): Promise<NBScraperResponse<Bac
     }
     const url = `${API_BASE_URL}/?page=chapter&id=${id}`;
     try {
-        const response = await makeRequest({ url, headers: API_HEADERS, timeout: 10000 });
+        const response = await makeRequest<any>({ url, headers: API_HEADERS, timeout: 10000 });
         const data = response.data;
         if (!data?.image?.length) {
             return createErrorResponse('Chapter data or images not found.', { type: ScraperErrorType.NOT_FOUND });

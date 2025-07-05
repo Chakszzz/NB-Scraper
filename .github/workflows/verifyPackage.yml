@@ -1,4 +1,3 @@
-
 name: 'Verify Package Exports'
 
 on:
@@ -7,6 +6,9 @@ on:
       - main
       - develop
   workflow_dispatch:
+
+permissions:
+  content: read
 
 jobs:
   verify:

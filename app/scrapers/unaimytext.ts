@@ -64,7 +64,12 @@ export async function unaimytextHumanize(
   options: UnaimytextOptions
 ): Promise<NBScraperResponse<UnaimytextData>> {
   try {
-    validateRequiredParams(options, ['text']);
+    // FIX: Manual validation instead of using validateRequiredParams
+    if (!options.text || typeof options.text !== 'string' || !options.text.trim()) {
+        return createErrorResponse("Parameter 'text' is required and cannot be empty", {
+            type: ScraperErrorType.INVALID_PARAMETER
+        });
+    }
 
     const { text, level = 'enhanced', settings = {} } = options;
     const validLevels: UnaimytextLevel[] = ["standard", "enhanced", "aggressive"];
