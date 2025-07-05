@@ -32,7 +32,7 @@ const SITE_KEY = '0x4AAAAAABAe_Da-31Q7nqIm';
  * > also, this service can be down at anytime, feel free to pull requests if you interested to refactor the code
  * @author YogikID
  * @beta
- * @see {@link ssyoutube | `ssyoutube`}
+ * @see {@link https://developers.cloudflare.com/turnstile/ | Cloudflare Turnstile Documentation}
  */
 export async function getTurnstileToken(): Promise<string> {
   const solverApiUrl = `https://api.yogik.id/tools/tcloudflare/?url=${TARGET_URL}&siteKey=${SITE_KEY}`;
