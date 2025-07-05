@@ -7,12 +7,11 @@ import type {
     TranslateImageResult,
     TranslateImageCredentials
 } from '../types';
-import {ScraperErrorType} from '../types';
+export {ScraperErrorType} from '../types';
 import {
     createErrorResponse,
     createSuccessResponse,
-    makeRequest,
-    validateRequiredParams
+    makeRequest
 } from '../utils';
 
 const BASE_URL = "https://translateimage.app";
@@ -40,7 +39,7 @@ async function getUploadCredentials(filename: string, fileType: string): Promise
 
 async function uploadToAliyunOSS(buffer: Buffer, filename: string, credentials: TranslateImageCredentials): Promise<string> {
     const { host, dir, accessId, policy, signature, callback, fileUrl } = credentials;
-    const ossKey = `${dir}${filename}`; // Simple concatenation for key
+    const ossKey = `${dir}${filename}`;
 
     const form = new FormData();
     form.append("key", ossKey);
@@ -68,14 +67,17 @@ async function uploadToAliyunOSS(buffer: Buffer, filename: string, credentials: 
 // --- Exported Scraper Functions ---
 
 /**
+ * @alpha
  * Uploads an image buffer and returns the public URL.
- * This is a utility for `translateEcommerceImageFromUrl`.
- * @returns Promise the url
+ * reefer the function at {@link translateImage | `translateImage`} or {@link translateManga | `translateManga`}
+ * @see - {@link translateEcommerceImageFromUrl | `translateEcommerceImageFromUrl`} for translated the E-commerce Image From Given Url
  */
 export async function uploadImage(options: { buffer: Buffer, filename: string }): Promise<NBScraperResponse<{ imageUrl: string }>> {
     try {
-        validateRequiredParams(options, ['buffer', 'filename']);
-        const credentials = await getUploadCredentials(options.filename, 'image/jpeg'); // Assuming jpeg, can be made dynamic
+        if (!options.buffer || !options.filename) {
+            return createErrorResponse("Parameters 'buffer' and 'filename' are required.", { type: ScraperErrorType.INVALID_PARAMETER });
+        }
+        const credentials = await getUploadCredentials(options.filename, 'image/jpeg');
         const imageUrl = await uploadToAliyunOSS(options.buffer, options.filename, credentials);
         return createSuccessResponse({ imageUrl });
     } catch (error) {
@@ -89,7 +91,9 @@ export async function uploadImage(options: { buffer: Buffer, filename: string })
  */
 export async function translateImage(options: TranslateImageOptions): Promise<NBScraperResponse<TranslateImageResult>> {
     try {
-        validateRequiredParams(options, ['buffer', 'filename']);
+        if (!options.buffer || !options.filename) {
+            return createErrorResponse("Parameters 'buffer' and 'filename' are required.", { type: ScraperErrorType.INVALID_PARAMETER });
+        }
         const { buffer, filename, sourceLanguage = 'auto', targetLanguage = 'en' } = options;
 
         const form = new FormData();
@@ -115,7 +119,9 @@ export async function translateImage(options: TranslateImageOptions): Promise<NB
  */
 export async function translateManga(options: TranslateMangaOptions): Promise<NBScraperResponse<TranslateImageResult>> {
     try {
-        validateRequiredParams(options, ['buffer', 'filename']);
+        if (!options.buffer || !options.filename) {
+            return createErrorResponse("Parameters 'buffer' and 'filename' are required.", { type: ScraperErrorType.INVALID_PARAMETER });
+        }
         const { buffer, filename, sourceLanguage = 'auto', targetLanguage = 'ENG', detectionMode = 'default', textDirection = 'auto' } = options;
 
         const form = new FormData();
@@ -143,7 +149,9 @@ export async function translateManga(options: TranslateMangaOptions): Promise<NB
  */
 export async function translateEcommerceImageFromUrl(options: TranslateEcommerceOptions): Promise<NBScraperResponse<TranslateImageResult>> {
     try {
-        validateRequiredParams(options, ['imageUrl']);
+        if (!options.imageUrl) {
+            return createErrorResponse("Parameter 'imageUrl' is required.", { type: ScraperErrorType.INVALID_PARAMETER });
+        }
         const { imageUrl, sourceLanguage = 'auto', targetLanguage = 'en', commodityProtection = true, detectionMode = 'default', textDirection = 'auto' } = options;
 
         const payload = { imageUrl, sourceLanguage, targetLanguage, commodityProtection, detectionMode, textDirection };
