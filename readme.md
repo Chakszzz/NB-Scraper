@@ -8,7 +8,7 @@
 
 A comprehensive TypeScript scraper library by **NB Team** that provides easy-to-use functions for interact with various scraper service from NB Scripts.
 
-## People Who Donate The Scraper's
+## Scrapers Constributor
 <!-- readme: fongsidev,lemonsync,najmyw,yogikid -start -->
 <!-- readme: fongsidev,lemonsync,najmyw,yogikid -end -->
 > [!NOTE]

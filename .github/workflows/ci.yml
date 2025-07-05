@@ -23,13 +23,6 @@ jobs:
       with:
         fetch-depth: 0
         
-    - if: |
-        (github.event_name == 'push' && startsWith(github.ref, 'refs/heads/main')) ||
-        (github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true)
-      uses: akhilmhdh/contributors-readme-action@v2.3.10
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    
     - name: Cache node modules
       uses: actions/cache@v3
       with:
