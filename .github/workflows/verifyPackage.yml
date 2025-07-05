@@ -24,8 +24,21 @@ jobs:
         with:
           node-version: 20
           
-      - name: 'Install Dependencies'
-        run: npm ci
+      - name: Install dependencies
+        run: |
+          if [ ! -f package-lock.json ]; then
+            echo "::warning::Lockfile tidak ada. Membuat yang baru..."
+            npm install --package-lock-only
+          
+            git config --global user.email "hub@erdev.biz.id"
+            git config --global user.name "ErBots"
+          
+            git add package-lock.json
+            git commit -m "chore: add lockfile [skip ci]"
+            git push
+          fi
+          
+          npm install
 
       - name: 'Build Package'
         run: npm run build
