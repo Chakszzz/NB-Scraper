@@ -27,9 +27,7 @@ This project is designed to be easy to use. Visit the [WhatsApp Channel](https:/
 <details>
 <summary><b>🔽 Want to Include Your Scraper?</b></summary>
 
-### Contribution Guide
-
-1. **Fork the repository**
+1. **Fork the repository** [here](https://github.com/Chakszzz/NB-Scraper/fork)
 2. **Create a new branch**: `git checkout -b feature/new-scraper`
 3. **Add your scraper** on `app/scrapers/`
 4. **Add comprehensive tests** in `integration-tests/` (optional)
@@ -133,6 +131,14 @@ See the [ERROR TYPES](app/types.ts)
 
 ## Available Scrapers
 **See The [scrapers folder](app/scrapers)**
+
+## Contributors
+
+<!-- readme: collaborators,contributors -start -->
+<!-- readme: collaborators,contributors -end -->
+
+> [!NOTE]
+> If you're name include on the [Repository scrapers folder](app/scrapers), You can submit you're github username at Github issue's  or via pull requests to include yours constributor at this section
 
 ## 📄 License
 
