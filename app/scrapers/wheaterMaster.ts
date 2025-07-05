@@ -26,7 +26,7 @@ import { createErrorResponse, createSuccessResponse } from '../utils';
  * });
  * console.log(customWeather)
  * ```
- * @author Fsgi (Fongsi)
+ * @author Fgsi (FongsiDev)
  */
 export class WeatherMaster {
   private lat: string;

@@ -1,4 +1,5 @@
 /**
+ * @packageDocumentation
  * This is all the necessary function from [NB-Scraper](https://npm.com/) library
  * @since 1.2.6
  * @module NB-Scraper

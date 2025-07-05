@@ -4,34 +4,52 @@
   "cname": "nb-scraper.js.org",
   "name": "NB Scraper Docs",
   "includeVersion": true,
-  "theme": "my-theme",
+  "excludePrivate": true,
+  "excludeProtected": true,
+  "excludeExternals": true,
+  "tsconfig": "tsconfig.json",
   "readme": "docs.md",
   "favicon": "public/favicon.ico",
-  "categorizeByGroup": false,
-  "searchGroupBoosts": {
-    "Classes": 1.5
-  },
-  "highlightLanguages": [
-    "typescript"
+  "categorizeByGroup": true,
+  "defaultCategory": "Other",
+  "categoryOrder": [
+    "Scrapers",
+    "Types",
+    "Utilities",
+    "*"
   ],
-  "sort": ["kind", "static-first"],
+  "sort": ["source-order"],
+  "kindSortOrder": [
+    "Project",
+    "Module",
+    "Namespace",
+    "Enum",
+    "Class",
+    "Interface",
+    "TypeAlias",
+    "Constructor",
+    "Property",
+    "Variable",
+    "Function",
+    "Accessor",
+    "Method"
+  ],
   "navigation": {
     "includeCategories": true,
     "includeGroups": true
   },
   "modifierTags": [
-    "@alpha", 
-    "@beta", 
+    "@alpha",
+    "@beta",
     "@experimental"
   ],
-  "markdownItOptions": {
-    "html": true
-  },
   "plugin": [
     "typedoc-plugin-missing-exports",
     "typedoc-plugin-mdn-links",
-    "@mxssfd/typedoc-theme"
+    "typedoc-material-theme"
   ],
   "githubPages": true,
+  "hideGenerator": true,
+  "searchInComments": true,
   "cleanOutputDir": true
 }
