@@ -74,6 +74,7 @@
     "cheerio": "^1.0.0-rc.12",
     "form-data": "latest",
     "fs": "latest",
+    "lodash": "^14.17.21",
     "qs": "latest",
     "crypto-js": "^4.2.0",
     "file-type": "^19.0.0"

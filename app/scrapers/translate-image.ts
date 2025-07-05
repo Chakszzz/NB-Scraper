@@ -7,7 +7,7 @@ import type {
     TranslateImageResult,
     TranslateImageCredentials
 } from '../types';
-export {ScraperErrorType} from '../types';
+import {ScraperErrorType} from '../types';
 import {
     createErrorResponse,
     createSuccessResponse,
