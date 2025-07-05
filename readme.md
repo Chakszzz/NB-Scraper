@@ -10,6 +10,40 @@ A comprehensive TypeScript scraper library by **NB Team** that provides easy-to-
 
 ## Scrapers Constributor
 <!-- readme: fongsidev,lemonsync,najmyw,yogikid -start -->
+<table>
+	<tbody>
+		<tr>
+            <td align="center">
+                <a href="https://github.com/fongsidev">
+                    <img src="https://avatars.githubusercontent.com/u/96420420?v=4" width="100;" alt="fongsidev"/>
+                    <br />
+                    <sub><b>Fongsi</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/lemonsync">
+                    <img src="https://avatars.githubusercontent.com/u/186121697?v=4" width="100;" alt="lemonsync"/>
+                    <br />
+                    <sub><b>Lemon</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/najmyw">
+                    <img src="https://avatars.githubusercontent.com/u/120731308?v=4" width="100;" alt="najmyw"/>
+                    <br />
+                    <sub><b>NajmyW</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/yogikid">
+                    <img src="https://avatars.githubusercontent.com/u/182364817?v=4" width="100;" alt="yogikid"/>
+                    <br />
+                    <sub><b>Yogi Priyan Perdana </b></sub>
+                </a>
+            </td>
+		</tr>
+	<tbody>
+</table>
 <!-- readme: fongsidev,lemonsync,najmyw,yogikid -end -->
 > [!NOTE]
 > If you're name include on the [Repository scrapers folder](app/scrapers), You can submit you're github username at Github issue's  or via pull requests to include yours constributor at this section
@@ -141,6 +175,40 @@ See the [ERROR TYPES](app/types.ts)
 ## Contributors
 
 <!-- readme: collaborators,contributors -start -->
+<table>
+	<tbody>
+		<tr>
+            <td align="center">
+                <a href="https://github.com/FongsiDev">
+                    <img src="https://avatars.githubusercontent.com/u/96420420?v=4" width="100;" alt="FongsiDev"/>
+                    <br />
+                    <sub><b>Fongsi</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/NajmyW">
+                    <img src="https://avatars.githubusercontent.com/u/120731308?v=4" width="100;" alt="NajmyW"/>
+                    <br />
+                    <sub><b>NajmyW</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/ErRickow">
+                    <img src="https://avatars.githubusercontent.com/u/172886759?v=4" width="100;" alt="ErRickow"/>
+                    <br />
+                    <sub><b>Just R</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/LemonSync">
+                    <img src="https://avatars.githubusercontent.com/u/186121697?v=4" width="100;" alt="LemonSync"/>
+                    <br />
+                    <sub><b>Lemon</b></sub>
+                </a>
+            </td>
+		</tr>
+	<tbody>
+</table>
 <!-- readme: collaborators,contributors -end -->
 
 ## 📄 License
