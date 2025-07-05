@@ -2,9 +2,9 @@ name: CI/CD Pipeline
 
 on:
   pull_request:
-    branches: [main, develop]
+    branches: [develop, constrib]
   push:
-    branches: [main]
+    branches: [constrib]
     tags: ['v*']
 
 permissions:
@@ -24,7 +24,7 @@ jobs:
         fetch-depth: 0
         
     - if: |
-        (github.event_name == 'push' && startsWith(github.ref, 'refs/heads/main')) ||
+        (github.event_name == 'push' && startsWith(github.ref, 'refs/heads/constrib')) ||
         (github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true)
       uses: akhilmhdh/contributors-readme-action@v2.3.10
       env:
