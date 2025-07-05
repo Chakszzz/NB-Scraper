@@ -8,6 +8,12 @@
 
 A comprehensive TypeScript scraper library by **NB Team** that provides easy-to-use functions for interact with various scraper service from NB Scripts.
 
+## People Who Donate The Scraper's
+<!-- readme: fongsidev,lemonsync,najmyw,yogikid -start -->
+<!-- readme: fongsidev,lemonsync,najmyw,yogikid -end -->
+> [!NOTE]
+> If you're name include on the [Repository scrapers folder](app/scrapers), You can submit you're github username at Github issue's  or via pull requests to include yours constributor at this section
+
 ### 📢 Join Our WhatsApp Channel
 Untuk update terbaru, dukungan, dan sumber daya scraping terbaik, ikuti saluran resmi kami:
 
@@ -136,9 +142,6 @@ See the [ERROR TYPES](app/types.ts)
 
 <!-- readme: collaborators,contributors -start -->
 <!-- readme: collaborators,contributors -end -->
-
-> [!NOTE]
-> If you're name include on the [Repository scrapers folder](app/scrapers), You can submit you're github username at Github issue's  or via pull requests to include yours constributor at this section
 
 ## 📄 License
 
