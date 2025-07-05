@@ -1,11 +1,14 @@
-## Checklist before open pull requests
-- [ ] Not changing file outside the file `app/*`?
-- [ ] Perbaiki atau tambah fitur baru? 
-- [ ] Tidak menghapus fungsi yang ada?
+<!--
+Welcome to contributing to NB Scraper! We're excited to see your changes.
 
-## Silahkan Open Pull Terlebih Dahulu Agar di review
-## Kamu Bisa juga mereview dengan bot di Conversation PR Github Nya agar tau kenapa belum bisa di merged
+We suggest you read the following contributing guide we've created:
 
-**Misal Belum fix, masih error di review PRnya, silahkan tunggu @ErRickow untuk membantu fix atau chat aja di group nb scraper**
+https://github.com/chakszzz/nb-scraper/blob/main/CONTRIBUTING.md
+-->
 
-## Jika kamu menyerah, bilang aja🗿
+Before submitting, please ensure you've followed these guidelines:
+
+- [x] Added only necessary functions in `app/scrapers/`
+- [x] Updated proper types in `app/types.ts`
+- [x] Didn't modify unrelated files
+- [x] Added syntaks Jsdocs if needed

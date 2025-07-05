@@ -23,9 +23,10 @@ jobs:
       with:
         fetch-depth: 0
         
-		- uses: akhilmhdh/contributors-readme-action@v2.3.10
-		  env:
-		      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - if: ${{ github.event_name == 'push' && startsWith(github.ref, 'refs/heads/main') }}
+      uses: akhilmhdh/contributors-readme-action@v2.3.10
+      env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     
     - name: Cache node modules
       uses: actions/cache@v3
