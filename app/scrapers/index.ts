@@ -17,14 +17,16 @@ export * from './animeindo';
 export { facebookDownloader } from './facebook';
 export { anyDownloader } from './anydownloader';
 export * from './youtube';
-export * from './bacomik';
-export { getYoutubePost } from './youtube-post';
+export * from './liputan6';
 export { laraTranslate } from './laratranslate';
-export { generateLyrics } from './lyrics-generator';
-export { searchApk } from './apkpure';
-export { unaimytextHumanize } from './unaimytext';
+export { savegram } from './savegram';
+export { WeatherMaster } from './wheaterMaster';
+export { getYoutubePost } from './youtube-post';
+export {generateLyrics} from './lyrics-generator';
+export {searchApk} from './apkpure';
 export {lemonWrite} from './writeCanvas';
-export {searchComics} from './bacakomik'
+export {searchComics} from './bacakomik';
+export {unaimytextHumanize} from './unaimytext';
 
 // Re-export types for convenience
 export type {
