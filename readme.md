@@ -1,7 +1,6 @@
 [![icon](public/logo.png)](https://whatsapp.com/channel/0029Vb5EZCjIiRotHCI1213L)
 [![NPM](https://nodei.co/npm/nb-scraper.png)](https://npmjs.org/package/nb-scraper)
 [![CodeFactor](https://www.codefactor.io/repository/github/chakszzz/nb-scraper/badge)](https://www.codefactor.io/repository/github/chakszzz/nb-scraper)
-[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://typescriptlang.org)
 [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/f7c79559f8d44dd49ee3fc69bc77aef3)](https://app.codacy.com?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 [![CI/CD Pipeline](https://github.com/Chakszzz/NB-Scraper/actions/workflows/ci.yml/badge.svg)](https://github.com/Chakszzz/NB-Scraper/actions/workflows/ci.yml)
@@ -45,8 +44,9 @@ A comprehensive TypeScript scraper library by **NB Team** that provides easy-to-
 	<tbody>
 </table>
 <!-- readme: fongsidev,lemonsync,najmyw,yogikid -end -->
+
 > [!NOTE]
-> If you're name include on the [Repository scrapers folder](app/scrapers), You can submit you're github username at Github issue's  or via pull requests to include yours constributor at this section
+> If you're name include on the [Repository scrapers folder](app/scrapers), You can submit you're github username at Github issue's  or via pull requests to include yours constributor on this list
 
 ### 📢 Join Our WhatsApp Channel
 Untuk update terbaru, dukungan, dan sumber daya scraping terbaik, ikuti saluran resmi kami:
@@ -172,44 +172,9 @@ See the [ERROR TYPES](app/types.ts)
 ## Available Scrapers
 **See The [scrapers folder](app/scrapers)**
 
-## Contributors
+## Mainteners
 
-<!-- readme: collaborators,contributors -start -->
-<table>
-	<tbody>
-		<tr>
-            <td align="center">
-                <a href="https://github.com/FongsiDev">
-                    <img src="https://avatars.githubusercontent.com/u/96420420?v=4" width="100;" alt="FongsiDev"/>
-                    <br />
-                    <sub><b>Fongsi</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/NajmyW">
-                    <img src="https://avatars.githubusercontent.com/u/120731308?v=4" width="100;" alt="NajmyW"/>
-                    <br />
-                    <sub><b>NajmyW</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/ErRickow">
-                    <img src="https://avatars.githubusercontent.com/u/172886759?v=4" width="100;" alt="ErRickow"/>
-                    <br />
-                    <sub><b>Just R</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/LemonSync">
-                    <img src="https://avatars.githubusercontent.com/u/186121697?v=4" width="100;" alt="LemonSync"/>
-                    <br />
-                    <sub><b>Lemon</b></sub>
-                </a>
-            </td>
-		</tr>
-	<tbody>
-</table>
-<!-- readme: collaborators,contributors -end -->
+- 
 
 ## 📄 License
 
