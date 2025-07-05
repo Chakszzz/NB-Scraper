@@ -39,8 +39,8 @@
     "includeGroups": true
   },
   "modifierTags": [
-    "@alpha", 
-    "@beta", 
+    "@alpha",
+    "@beta",
     "@experimental"
   ],
   "plugin": [

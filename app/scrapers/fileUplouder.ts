@@ -114,7 +114,6 @@ const isAllowedFileType = (mime: string, filename: string = ''): boolean => {
 };
 
 /**
- * @public
  * File Upload Scraper for yupra.dpdns.org
  */
 export const fileUploadScraper = {

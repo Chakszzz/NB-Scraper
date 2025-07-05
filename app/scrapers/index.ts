@@ -2,7 +2,7 @@
  * Scrapers module exports
  * 
  * @module Scrapers
- * @since 1.1.6
+ * @since 1.1.7
  */
 
 export { blackboxAi } from './blackbox';
@@ -29,6 +29,7 @@ export {searchComics} from './bacakomik';
 export {unaimytextHumanize} from './unaimytext';
 export {ssyoutube} from './ssyoutube';
 export {ffstalk, getTurnstileToken} from './ffstalk';
+export {uploadImage, translateImage, translateManga, translateEcommerceImageFromUrl} from './translate-image';
 
 // Re-export types for convenience
 export type {
@@ -144,5 +145,12 @@ export type {
 	FFStalkEquipped,
 	FFStalkEquippedItem,
 	FFStalkGuildInfo,
-	FFStalkPetInfo
+	FFStalkPetInfo,
+  TranslateEcommerceOptions,
+  TranslateImageAPI,
+  TranslateImageCredentials,
+  TranslateImageOptions,
+  TranslateImageResult,
+  TranslateMangaOptions,
+  Alerts
 } from '../types';

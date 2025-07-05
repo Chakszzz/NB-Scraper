@@ -7,7 +7,6 @@
 /**
  * Standard response structure for all scraper functions
  * @template T - The type of the data property
- * @interface NBScraperResponse
  */
 export interface NBScraperResponse<T = unknown> {
   /** The creator/author of this scraper */
@@ -22,7 +21,6 @@ export interface NBScraperResponse<T = unknown> {
 
 /**
  * Configuration options for HTTP requests
- * @interface RequestConfig
  */
 export interface RequestConfig {
 	timeout ? : number | undefined;
@@ -125,7 +123,6 @@ export enum ScraperErrorType {
 
 /**
  * Detailed error information
- * @interface ScraperError
  */
 export interface ScraperError {
   /** The type of error that occurred */
@@ -139,6 +136,53 @@ export interface ScraperError {
 }
 
 /* ==================== Scraper-Specific Types ==================== */
+
+/**
+ * TranslateImage Scraper Types
+ */
+export interface TranslateImageCredentials {
+  host: string;
+  dir: string;
+  accessId: string;
+  policy: string;
+  signature: string;
+  callback: string;
+  fileUrl: string;
+}
+
+export interface TranslateImageOptions {
+  buffer: Buffer;
+  filename: string;
+  sourceLanguage?: string;
+  targetLanguage?: string;
+}
+
+export interface TranslateMangaOptions extends TranslateImageOptions {
+  detectionMode?: 'default' | string;
+  textDirection?: 'auto' | 'vertical' | 'horizontal';
+}
+
+export interface TranslateEcommerceOptions {
+  imageUrl: string;
+  sourceLanguage?: string;
+  targetLanguage?: string;
+  commodityProtection?: boolean;
+  detectionMode?: 'default' | string;
+  textDirection?: 'auto' | 'vertical' | 'horizontal';
+}
+
+export interface TranslateImageResult {
+  request_id: string;
+  // Menambahkan properti lain yang mungkin ada di respons
+  [key: string]: any;
+}
+
+export interface TranslateImageAPI {
+  translateImage(options: TranslateImageOptions): Promise<NBScraperResponse<TranslateImageResult>>;
+  translateManga(options: TranslateMangaOptions): Promise<NBScraperResponse<TranslateImageResult>>;
+  translateEcommerceImageFromUrl(options: TranslateEcommerceOptions): Promise<NBScraperResponse<TranslateImageResult>>;
+  uploadImage(options: { buffer: Buffer, filename: string }): Promise<NBScraperResponse<{ imageUrl: string }>>;
+}
 
 /**
  * Free Fire Stalk (ffstalk) Scraper Types
@@ -1162,7 +1206,6 @@ export interface AnimeIndoAPI {
 
 /**
  * Global configuration for the scraper library
- * @interface NBScraperConfig
  */
 export interface NBScraperConfig {
   /** Default timeout for all requests */

@@ -22,7 +22,8 @@ const SITE_KEY = '0x4AAAAAABAe_Da-31Q7nqIm';
  * Fetches a Cloudflare Turnstile token from an external solver API.
  * You can use this function if needed
  * 
- * @example ```
+ * @example 
+ * ```ts
  * import {getTurnstileToken} from 'nb-scraper'
  * 
  * const result = await getTurnstileToken()
@@ -31,6 +32,7 @@ const SITE_KEY = '0x4AAAAAABAe_Da-31Q7nqIm';
  * > also, this service can be down at anytime, feel free to pull requests if you interested to refactor the code
  * @author YogikID
  * @beta
+ * @see {@link ssyoutube | `ssyoutube`}
  */
 export async function getTurnstileToken(): Promise<string> {
   const solverApiUrl = `https://api.yogik.id/tools/tcloudflare/?url=${TARGET_URL}&siteKey=${SITE_KEY}`;

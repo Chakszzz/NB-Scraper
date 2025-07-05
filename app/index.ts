@@ -1,8 +1,8 @@
 /**
- * NB Scraper - Community scraper library by Er Rickow
- * 
  * @packageDocumentation
+ * This is all the necessary function from [NB-Scraper](https://npm.com/) library
  * @since 1.2.6
+ * @module NB-Scraper
  *
  */
 // Export all scrapers
@@ -127,7 +127,14 @@ export type {
   FFStalkEquipped,
   FFStalkEquippedItem,
   FFStalkGuildInfo,
-  FFStalkPetInfo
+  FFStalkPetInfo,
+  TranslateEcommerceOptions,
+  TranslateImageAPI,
+  TranslateImageCredentials,
+  TranslateImageOptions,
+  TranslateImageResult,
+  TranslateMangaOptions,
+  Alerts
 } from './types';
 
 // Export utilities (for advanced users)
@@ -144,13 +151,11 @@ export {
 
 /**
  * Library version
- * @public
  */
 export const VERSION = "1.2.6";
 
 /**
  * Library information
- * @public
  */
 export const INFO = {
 	name: 'nb-scraper',
