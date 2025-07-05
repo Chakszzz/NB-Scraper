@@ -41,6 +41,8 @@ if (result.status) {
 }
 ```
 
+> If you get confused when reading this documentations, **just read the variables or functions section's **
+
 ---
 
 ## Further Integrating
