@@ -1,5 +1,5 @@
 import type { AxiosRequestConfig } from 'axios';
-import cheerio from 'cheerio';
+import * as cheerio from 'cheerio';
 import qs from 'qs';
 import {
   NBScraperResponse,
