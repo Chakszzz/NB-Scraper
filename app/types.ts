@@ -7,7 +7,6 @@
 /**
  * Standard response structure for all scraper functions
  * @template T - The type of the data property
- * @interface NBScraperResponse
  */
 export interface NBScraperResponse<T = unknown> {
   /** The creator/author of this scraper */
@@ -22,7 +21,6 @@ export interface NBScraperResponse<T = unknown> {
 
 /**
  * Configuration options for HTTP requests
- * @interface RequestConfig
  */
 export interface RequestConfig {
 	timeout ? : number | undefined;
@@ -125,7 +123,6 @@ export enum ScraperErrorType {
 
 /**
  * Detailed error information
- * @interface ScraperError
  */
 export interface ScraperError {
   /** The type of error that occurred */
@@ -1209,7 +1206,6 @@ export interface AnimeIndoAPI {
 
 /**
  * Global configuration for the scraper library
- * @interface NBScraperConfig
  */
 export interface NBScraperConfig {
   /** Default timeout for all requests */

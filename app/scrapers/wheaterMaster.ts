@@ -12,10 +12,6 @@ import { createErrorResponse, createSuccessResponse } from '../utils';
 
 /**
  * Get Weater Info
- * @class WeatherMaster
- * @private lat - latitude
- * @private lon - idk what is this
- * 
  * @example
  * ```
  * import { WeatherMaster } from 'nb-scraper';
@@ -69,7 +65,7 @@ export class WeatherMaster {
    * Decrypts an encrypted string using AES.
    * @param encrypted - The encrypted string.
    * @returns The decrypted string.
-   * @private
+   * 
    */
   private decrypt(encrypted: string): string {
     return CryptoJS.AES.decrypt(encrypted, this.secret).toString(
