@@ -23,7 +23,6 @@
     "build:cjs": "tsc -p tsconfig.cjs.json",
     "build:types": "tsc -p tsconfig.types.json",
     "dev": "tsx watch app/index.ts",
-    "test": "jest --passWithNoTests",
     "lint": "eslint app/**/*.ts",
     "lint:fix": "eslint app/**/*.ts --fix",
     "docs": "typedoc app/index.ts --out docs",

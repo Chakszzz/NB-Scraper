@@ -25,6 +25,8 @@ export { getYoutubePost } from './youtube-post';
 export {generateLyrics} from './lyrics-generator';
 export {searchApk} from './apkpure';
 export {lemonWrite} from './writeCanvas';
+export {searchComics} from './bacakomik'
+export {unaimytextHumanize} from './unaimytext';
 
 // Re-export types for convenience
 export type {
@@ -50,6 +52,13 @@ export type {
   BlackBoxAIData,
   BlackBoxAIOptions,
   BlackBoxSource,
+  BacaKomikAPI,
+  BacaKomikChapterData,
+  BacaKomikDetailData,
+  BacaKomikFilterOptions,
+  BacaKomikLatestResult,
+  BacaKomikRecommendationResult,
+  BacaKomikSearchResult,
   ExomlAPIMessage,
   ExomlAPIOptions,
   ExomlAPIData,
@@ -105,6 +114,10 @@ export type {
 	CharSetOptions,
 	FileInfoResult,
 	FileUploadResult,
+	UnaimytextAPI,
+	UnaimytextData,
+	UnaimytextOptions,
+	UnaimytextSettings,
   LaraAPI,
   LaraTranslateData,
   LaraTranslateOptions,
