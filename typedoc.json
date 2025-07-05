@@ -8,9 +8,10 @@
   "excludeProtected": true,
   "excludeExternals": true,
   "tsconfig": "tsconfig.json",
+  "theme": "my-theme",
   "readme": "docs.md",
   "favicon": "public/favicon.ico",
-  "categorizeByGroup": true,
+  "categorizeByGroup": false,
   "defaultCategory": "Other",
   "categoryOrder": [
     "Scrapers",
@@ -18,7 +19,7 @@
     "Utilities",
     "*"
   ],
-  "sort": ["source-order"],
+  "sort": ["source-order", "kind", "static-first"],
   "kindSortOrder": [
     "Project",
     "Module",
@@ -46,7 +47,7 @@
   "plugin": [
     "typedoc-plugin-missing-exports",
     "typedoc-plugin-mdn-links",
-    "typedoc-material-theme"
+    "@mxssfd/typedoc-theme"
   ],
   "githubPages": true,
   "hideGenerator": true,

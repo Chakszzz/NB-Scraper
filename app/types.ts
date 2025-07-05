@@ -141,6 +141,53 @@ export interface ScraperError {
 /* ==================== Scraper-Specific Types ==================== */
 
 /**
+ * TranslateImage Scraper Types
+ */
+export interface TranslateImageCredentials {
+  host: string;
+  dir: string;
+  accessId: string;
+  policy: string;
+  signature: string;
+  callback: string;
+  fileUrl: string;
+}
+
+export interface TranslateImageOptions {
+  buffer: Buffer;
+  filename: string;
+  sourceLanguage?: string;
+  targetLanguage?: string;
+}
+
+export interface TranslateMangaOptions extends TranslateImageOptions {
+  detectionMode?: 'default' | string;
+  textDirection?: 'auto' | 'vertical' | 'horizontal';
+}
+
+export interface TranslateEcommerceOptions {
+  imageUrl: string;
+  sourceLanguage?: string;
+  targetLanguage?: string;
+  commodityProtection?: boolean;
+  detectionMode?: 'default' | string;
+  textDirection?: 'auto' | 'vertical' | 'horizontal';
+}
+
+export interface TranslateImageResult {
+  request_id: string;
+  // Menambahkan properti lain yang mungkin ada di respons
+  [key: string]: any;
+}
+
+export interface TranslateImageAPI {
+  translateImage(options: TranslateImageOptions): Promise<NBScraperResponse<TranslateImageResult>>;
+  translateManga(options: TranslateMangaOptions): Promise<NBScraperResponse<TranslateImageResult>>;
+  translateEcommerceImageFromUrl(options: TranslateEcommerceOptions): Promise<NBScraperResponse<TranslateImageResult>>;
+  uploadImage(options: { buffer: Buffer, filename: string }): Promise<NBScraperResponse<{ imageUrl: string }>>;
+}
+
+/**
  * Free Fire Stalk (ffstalk) Scraper Types
  */
 export interface FFStalkAccountInfo {
