@@ -5,8 +5,9 @@ const assert = require('assert');
 console.log('🧪 Running CommonJS (require) test...');
 
 try {
-  // Impor paket yang sudah di-build dari direktori dist
-  const nbScraper = require('../dist/cjs/index.js');
+  // --- PERBAIKAN ---
+  // Arahkan ke file output CJS yang benar dari tsup
+  const nbScraper = require('../dist/index.js');
 
   // Verifikasi bahwa salah satu fungsi ada dan merupakan sebuah fungsi
   assert.strictEqual(typeof nbScraper.unaimytextHumanize, 'function', 'unaimytextHumanize should be a function in CJS build');
