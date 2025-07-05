@@ -1,11 +1,8 @@
-name: CI
+name: Constributor List
 on:
     push:
         branches:
             - main
-
-permissions:
-  contents: write
 
 jobs:
     contrib-readme-job:
@@ -14,5 +11,7 @@ jobs:
         steps:
             - name: Contribute List
               uses: akhilmhdh/contributors-readme-action@master
+              with:
+                  readme_path: "readme.md"
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
