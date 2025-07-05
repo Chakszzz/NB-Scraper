@@ -4,36 +4,17 @@
   "cname": "nb-scraper.js.org",
   "name": "NB Scraper Docs",
   "includeVersion": true,
-  "excludePrivate": true,
-  "excludeProtected": true,
-  "excludeExternals": true,
   "theme": "my-theme",
   "readme": "docs.md",
   "favicon": "public/favicon.ico",
   "categorizeByGroup": false,
-  "defaultCategory": "Other",
-  "categoryOrder": [
-    "Scrapers",
-    "Types",
-    "Utilities",
-    "*"
+  "searchGroupBoosts": {
+    "Classes": 1.5
+  },
+  "highlightLanguages": [
+    "typescript"
   ],
-  "sort": ["source-order", "kind", "static-first"],
-  "kindSortOrder": [
-    "Project",
-    "Module",
-    "Namespace",
-    "Enum",
-    "Class",
-    "Interface",
-    "TypeAlias",
-    "Constructor",
-    "Property",
-    "Variable",
-    "Function",
-    "Accessor",
-    "Method"
-  ],
+  "sort": ["kind", "static-first"],
   "navigation": {
     "includeCategories": true,
     "includeGroups": true
@@ -52,7 +33,5 @@
     "@mxssfd/typedoc-theme"
   ],
   "githubPages": true,
-  "hideGenerator": true,
-  "searchInComments": true,
   "cleanOutputDir": true
 }
