@@ -59,7 +59,7 @@ jobs:
           CURRENT_VERSION=$(jq -r .version package.json)
           PACKAGE_NAME=$(jq -r .name package.json)
           
-          npm deprecate "${PACKAGE_NAME}@<${CURRENT_VERSION}" "[NB SCRAPER DEPRECATED] This version is deprecated. Please upgrade to ${CURRENT_VERSION}. Run: npm i nb-scraper@latest"
+          npm deprecate "${PACKAGE_NAME}@<${CURRENT_VERSION}" "[NB SCRAPER DEPRECATED] This version is deprecated. Please upgrade to ${CURRENT_VERSION}. Run: npm i nb-scraper@latest.\n\n[Learn More](https://nb-scraper.js.org)"
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           NPM_CONFIG_PROVENANCE: true

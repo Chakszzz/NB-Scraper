@@ -2,7 +2,7 @@
  * Scrapers module exports
  * 
  * @module Scrapers
- * @since 1.1.5
+ * @since 1.1.6
  */
 
 export { blackboxAi } from './blackbox';
@@ -27,6 +27,8 @@ export {searchApk} from './apkpure';
 export {lemonWrite} from './writeCanvas';
 export {searchComics} from './bacakomik';
 export {unaimytextHumanize} from './unaimytext';
+export {ssyoutube} from './ssyoutube';
+export {ffstalk, getTurnstileToken} from './ffstalk';
 
 // Re-export types for convenience
 export type {
@@ -132,5 +134,15 @@ export type {
   YouTubeVideoResponse,
 	WriteCanvas,
 	LemonWriteResult,
-	LemonWriteOptions
+	LemonWriteOptions,
+	SSYoutubeAPI,
+	SSYoutubeData,
+	SSYoutubeDownloadFormat,
+	FFStalkAPI,
+	FFStalkData,
+	FFStalkAccountInfo,
+	FFStalkEquipped,
+	FFStalkEquippedItem,
+	FFStalkGuildInfo,
+	FFStalkPetInfo
 } from '../types';

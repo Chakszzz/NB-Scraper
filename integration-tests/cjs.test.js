@@ -11,6 +11,8 @@ try {
 
   // Verifikasi bahwa salah satu fungsi ada dan merupakan sebuah fungsi
   assert.strictEqual(typeof nbScraper.unaimytextHumanize, 'function', 'unaimytextHumanize should be a function in CJS build');
+  assert.strictEqual(typeof nbScraper.ffstalk, 'function', 'ffstalk should be a function in CJS build')
+  assert.strictEqual(typeof nbScraper.ssyoutube, 'function', 'ssyoutube should be a function in CJS build')
   assert.strictEqual(typeof nbScraper.searchApk, 'function', 'searchApk should be a function in CJS build');
   
   console.log('✅ CommonJS test passed!');

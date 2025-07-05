@@ -141,6 +141,66 @@ export interface ScraperError {
 /* ==================== Scraper-Specific Types ==================== */
 
 /**
+ * Free Fire Stalk (ffstalk) Scraper Types
+ */
+export interface FFStalkAccountInfo {
+  [key: string]: string;
+}
+
+export interface FFStalkPetInfo {
+  [key: string]: string;
+}
+
+export interface FFStalkGuildInfo {
+  [key: string]: string;
+}
+
+export interface FFStalkEquippedItem {
+  name: string;
+  image: string;
+}
+
+export interface FFStalkEquipped {
+  [category: string]: FFStalkEquippedItem[];
+}
+
+export interface FFStalkData {
+  accountInfo: FFStalkAccountInfo;
+  petInfo: FFStalkPetInfo;
+  guildInfo: FFStalkGuildInfo;
+  equipped: FFStalkEquipped;
+}
+
+export interface FFStalkAPI {
+  (uid: string): Promise<NBScraperResponse<FFStalkData>>;
+}
+
+/**
+ * SSYoutube Scraper Types
+ */
+export interface SSYoutubeDownloadFormat {
+  url: string;
+  quality: string;
+  ext: string;
+  size: string;
+  hasAudio?: boolean;
+}
+
+export interface SSYoutubeData {
+  title: string;
+  duration: string;
+  thumbnail: string;
+  downloads: {
+    video: SSYoutubeDownloadFormat[];
+    audio: SSYoutubeDownloadFormat[];
+  };
+}
+
+export interface SSYoutubeAPI {
+  (url: string): Promise<NBScraperResponse<SSYoutubeData>>;
+}
+
+/**
  * Unaimytext Scraper Types
  */
 export type UnaimytextLevel = 'standard' | 'enhanced' | 'aggressive';

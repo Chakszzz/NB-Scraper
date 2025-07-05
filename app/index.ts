@@ -1,15 +1,8 @@
 /**
  * NB Scraper - Community scraper library by Er Rickow
  * 
- * If you get confused read this documentations, just read the variables or functions section's 
- * 
- * Don't forget to install the nb-scraper first:
- * ```bash
- * npm i nb-scraper 
- * ```
- * 
  * @packageDocumentation
- * @since 1.2.2
+ * @since 1.2.6
  *
  */
 // Export all scrapers
@@ -124,7 +117,17 @@ export type {
   YouTubeVideoResponse,
   WriteCanvas,
   LemonWriteResult,
-  LemonWriteOptions
+  LemonWriteOptions,
+  SSYoutubeAPI,
+  SSYoutubeData,
+  SSYoutubeDownloadFormat,
+  FFStalkAPI,
+  FFStalkData,
+  FFStalkAccountInfo,
+  FFStalkEquipped,
+  FFStalkEquippedItem,
+  FFStalkGuildInfo,
+  FFStalkPetInfo
 } from './types';
 
 // Export utilities (for advanced users)
@@ -155,5 +158,5 @@ export const INFO = {
 	author: 'Er Rickow',
 	description: 'NB Community scraper library',
 	repository: 'https://github.com/chakszzz/nb-scraper',
-	documentation: 'https://Chakszzz.github.io/NB-Scraper'
+	documentation: 'https://nb-scraper.js.org'
 } as const;
